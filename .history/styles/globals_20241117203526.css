@@ -1,0 +1,149 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(8px); /* Add blur to the image */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  text-align: left;
+  z-index: 1; /* Ensure overlay content is above the blurred image */
+}
+
+.heroTitle {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between logo and text */
+  margin-bottom: 20px;
+}
+
+.heroTitle img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.heroTitle h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: white;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.8; /* Add line-height for better spacing */
+  max-width: 600px; /* Limit width for readability */
+  letter-spacing: 0.5px; /* Slight letter-spacing for clarity */
+  margin-top: 0; /* Remove top margin */
+}
+
+.ctaButton {
+  background-color: #ffffff;
+  color: rgb(3, 69, 16);
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 50px;
+
+}
+
+.ctaButton:hover {
+  background-color: #403f3f;
+  color: rgb(255, 255, 255);
+  width: 120px; 
+  
+}
+
+/* Additional Sections (Features, Coaches, Footer) */
+.features, .coaches {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.features h2, .coaches h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.infoCards, .coachCards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card, .coachCards .card {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  width: 400px;
+}
+
+.card img, .coachCards .card img {
+  border-radius: 8px;
+}
+
+.card h3, .coachCards .card h3 {
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+.card p, .coachCards .card p {
+  font-size: 1rem;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+}

@@ -1,0 +1,46 @@
+/* styles/globals.css */
+
+/* Other styles from previous sections */
+
+/* Third Section: Introducing People (Team Members or Testimonials) */
+.introducingPeople {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.introducingPeople h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.teamCards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.teamCard {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  width: 280px;
+}
+
+.teamCard img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.teamCard h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.teamCard p {
+  font-size: 1rem;
+  color: #555;
+}

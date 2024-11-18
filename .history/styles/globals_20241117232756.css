@@ -1,0 +1,185 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Hero Section */
+.hero {
+  display: flex; /* Use flexbox to align elements side by side */
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.imageWrapper {
+  position: relative;
+  width: 60%; /* Left side width for the nature image */
+  height: 100%;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 40px;
+  text-align: left;
+  z-index: 1; /* Ensure overlay stays above the left image */
+}
+
+.heroTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.heroTitle img {
+  margin-right: 20px;
+}
+
+.heroTitle h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  line-height: 1.1;
+}
+
+.bestNature {
+  display: block;
+  font-size: 3rem;
+}
+
+.appEver {
+  display: block;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+/* Sub-Tagline (Your paragraph) */
+.subTagline {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 650px;
+  color: white;
+  text-align: left;
+}
+
+.demoText {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.natureText {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* CTA Button */
+.ctaButton {
+  background-color: #ac0c94;
+  color: #ffffff;
+  padding: 15px 40px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 50px;
+  margin-top: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.ctaButton:hover {
+  background-color: #61073a;
+}
+
+.ctaButton:focus {
+  outline: none;
+}
+
+/* New Image on the Right */
+.rightImageWrapper {
+  width: 40%; /* Right side takes up 40% of the width */
+  padding: 20px;
+  position: relative;
+  z-index: 0; /* Ensure this image is below the overlay */
+}
+
+.rightImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.rightImageContainer img {
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the image fills its container */
+}
+
+/* Make sure the layout looks good on small screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .imageWrapper, .rightImageWrapper {
+    width: 100%; /* Both sections will take up the full width on mobile */
+  }
+
+  .overlay {
+    padding: 40px; /* Reduce padding on smaller screens */
+  }
+
+  .ctaButton {
+    font-size: 1.2rem;
+  }
+
+  .tagline {
+    font-size: 3rem; /* Smaller tagline for mobile */
+  }
+
+  .bestNature, .appEver {
+    font-size: 2rem; /* Adjust the font size */
+  }
+
+  .subTagline {
+    font-size: 1rem; /* Adjust font size */
+  }
+}

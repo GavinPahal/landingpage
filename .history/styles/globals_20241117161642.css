@@ -1,0 +1,118 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-image: url('/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #005bb5;
+}
+
+/* Features Section */
+.features {
+  padding: 50px 20px;
+}
+
+.feature {
+  margin-bottom: 30px;
+}
+
+.feature-1 {
+  background-image: url('/feature1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-2 {
+  background-image: url('/feature2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-3 {
+  background-image: url('/feature3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px 20px;
+  background-color: #e0f7fa;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  font-weight: bold;
+}

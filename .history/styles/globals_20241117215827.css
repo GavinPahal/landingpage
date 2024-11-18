@@ -1,0 +1,106 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #2d2d2d; /* Dark background to contrast with the image */
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(8px); /* Blur the background image */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay to ensure text stands out */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  text-align: center; /* Center text */
+}
+
+.heroTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.heroTitle img {
+  margin-right: 15px;
+}
+
+.heroTitle h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  letter-spacing: 1.5px;
+  display: block;
+  line-height: 1.1;
+}
+
+.bestNature {
+  font-size: 3rem;
+}
+
+.appEver {
+  font-size: 3rem;
+}
+
+.subTagline {
+  font-size: 1.2rem; /* Slightly smaller font size for the sub tagline */
+  max-width: 650px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.ctaButton {
+  background-color: #f4e242;
+  color: #333;
+  padding: 15px 40px;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+}
+
+.ctaButton:hover {
+  background-color: #ffcd00;
+  transform: scale(1.05);
+}
+
+.ctaButton:focus {
+  outline: none;
+}

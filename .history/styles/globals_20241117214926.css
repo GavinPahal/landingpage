@@ -1,0 +1,181 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #2d2d2d; /* Dark background to contrast with the image */
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(8px); /* Add blur effect to the image */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay to ensure text stands out */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 40px; /* Increase padding for more space */
+  text-align: left;
+}
+
+.heroTitle {
+  display: flex;
+  align-items: center; /* Align logo and title horizontally */
+  margin-bottom: 40px; /* Space between title and the rest of the content */
+  position: relative; /* Allow positioning adjustments */
+  top: -80px; /* Move the logo and title even higher */
+}
+
+.heroTitle img {
+  margin-right: 20px; /* Add space between logo and title */
+}
+
+.heroTitle h1 {
+  font-size: 2rem; /* Bigger font for app name */
+  font-weight: bold;
+  color: #f4e242; /* Bright color to stand out */
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-size: 5rem; /* Make "BEST NATURE APP" 5rem */
+  font-weight: bold;
+  margin-bottom: 0; /* Remove extra space between the lines */
+  color: #f4e242; /* Striking color */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); /* Enhanced text visibility */
+  line-height: 1.1; /* Adjust line-height to decrease space between lines */
+  letter-spacing: 1.5px;
+  display: block;
+  max-width: 100%; /* Ensure text doesn't overflow */
+}
+
+.bestNature {
+  display: block;
+  font-size: 3rem; /* Adjust to smaller font size for the first part */
+}
+
+.appEver {
+  display: block;
+  margin-top: 0; /* Remove the top margin to reduce space between lines */
+  font-size: 3rem; /* Adjust to smaller font size for the second part */
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  max-width: 650px;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.ctaButton {
+  background-color: #f4e242;
+  color: #333;
+  padding: 15px 40px;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+}
+
+.ctaButton:hover {
+  background-color: #ffcd00;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.ctaButton:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.overlay .ctaButton {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+/* Additional Sections (Features, Coaches, Footer) */
+.features, .coaches {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.features h2, .coaches h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.infoCards, .coachCards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card, .coachCards .card {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  width: 400px;
+}
+
+.card img, .coachCards .card img {
+  border-radius: 8px;
+}
+
+.card h3, .coachCards .card h3 {
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+.card p, .coachCards .card p {
+  font-size: 1rem;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+}
