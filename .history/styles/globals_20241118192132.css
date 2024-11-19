@@ -193,42 +193,43 @@ body {
   margin-bottom: 40px; /* Added space below the cards for separation */
 }
 
-
+/* Adjustments to the cards for better readability */
 .card {
-  text-align: center; 
+  text-align: center; /* Center content in the card */
 }
 
 .card img {
-  margin-bottom: 15px; 
+  margin-bottom: 15px; /* Space below the image */
 }
 
 .card h3 {
-  font-size: 1.5rem; 
+  font-size: 1.5rem; /* Medium font for headings */
   font-weight: 600;
-  color: #000000; 
-  margin-bottom: 10px; 
+  color: #000000; /* Dark text for readability */
+  margin-bottom: 10px; /* Space below the heading */
 }
 
 .card p {
-  font-size: 1rem; 
-  line-height: 1.6; 
-  color: #000000; 
-  max-width: 250px;
-  margin: 0 auto; 
+  font-size: 1rem; /* Standard font size for body text */
+  line-height: 1.6; /* More line height for readability */
+  color: #000000; /* Slightly lighter text color */
+  max-width: 250px; /* Limit width to prevent overly long lines */
+  margin: 0 auto; /* Center the text */
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .infoCards {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column; /* Stack the cards vertically on smaller screens */
+    align-items: center; /* Center-align the cards */
   }
 
   .card {
-    max-width: 90%; 
+    max-width: 90%; /* Make cards full width on small screens */
   }
 }
 
-
+/* Footer Section */
 .footer {
   background-color: #333;
   color: white;

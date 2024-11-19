@@ -217,6 +217,7 @@ body {
   margin: 0 auto; 
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .infoCards {
     flex-direction: column; 
@@ -224,11 +225,11 @@ body {
   }
 
   .card {
-    max-width: 90%; 
+    max-width: 90%; /* Make cards full width on small screens */
   }
 }
 
-
+/* Footer Section */
 .footer {
   background-color: #333;
   color: white;

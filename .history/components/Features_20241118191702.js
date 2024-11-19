@@ -30,7 +30,7 @@ export default function Features() {
         </div>
         <div className="card">
           <Image
-            src="/images/accessibility.png"
+            src="/images/usability.png"
             alt="Feature 2"
             width={75}
             height={75}
@@ -43,7 +43,7 @@ export default function Features() {
         </div>
         <div className="card">
           <Image
-            src="/images/globe.png"
+            src="/images/global.png"
             alt="Feature 2"
             width={75}
             height={75}
