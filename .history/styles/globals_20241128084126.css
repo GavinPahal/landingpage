@@ -1,0 +1,22 @@
+.features {
+  padding: 50px 20px;
+  color: white;
+  text-align: center;
+  display: flex; /* Add flexbox to align items */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.card {
+  text-align: center;
+  margin: 0 auto; /* Ensure cards are centered */
+}
+
+.card:first-child { /* Target the first feature card */
+  max-width: 400px; /* Restrict width for a cleaner layout */
+  margin: 20px auto; /* Center the card horizontally and add spacing */
+}
+
+.card:first-child p {
+  text-align: center; /* Center-align the text for the first card */
+}

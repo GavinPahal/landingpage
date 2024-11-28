@@ -203,8 +203,6 @@ body {
 
 .card:first-child p {
   text-align: center; /* Center-align the text for the first card */
-  max-width: 260px; /* Ensure text does not overflow the card */
-  margin: 0 auto;
 }
 
 .card img {
@@ -245,115 +243,24 @@ body {
   text-align: left;
 }
 
-/* Adjustments for better responsiveness and layout improvements */
-
-/* Hero Section Adjustments for smaller screens */
-@media (max-width: 1024px) {
-  .hero {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
-  }
-
-  .overlay {
-    padding: 40px 20px; /* Reduced padding for smaller screens */
-    text-align: center; /* Center-align text on smaller screens */
-  }
-
-  .heroTitle {
-    margin-bottom: 20px; /* Reduce space between the title and the tagline */
-    top: 0; /* Reset top positioning for better alignment */
-  }
-
-  .tagline {
-    font-size: 3rem; /* Decrease font size on smaller screens */
-  }
-
-  .bestNature, .appEver {
-    font-size: 2.5rem; /* Smaller font size for better readability */
-  }
-
-  .subTagline {
-    font-size: 1rem; /* Adjust subtagline font size for smaller screens */
-    max-width: 100%; /* Allow full-width display */
-    padding: 0 20px; /* Add padding to the sides */
-  }
-
-  .rightImageWrapper {
-    left: 50%; /* Center the image on smaller screens */
-    bottom: 10px;
-    width: 300px; /* Reduce image size */
-    margin-top: 60px;
-  }
-}
-
-/* CTA Button Adjustments */
 @media (max-width: 768px) {
-  .ctaButton {
-    padding: 12px 30px; /* Reduced padding for better proportion on small screens */
-    font-size: 1.2rem; /* Smaller font size */
-    width: 90%; /* Allow the button to take up more space on smaller screens */
-    margin-top: 40px; /* Reduced top margin */
-  }
-}
-
-/* Feature Section Adjustments */
-@media (max-width: 768px) {
-  .features {
-    padding: 30px 20px; /* Reduce padding */
-  }
-
-  .features h2 {
-    font-size: 2rem; /* Smaller font size for headings */
-  }
-
   .infoCards {
-    flex-direction: column; /* Stack cards vertically */
+    flex-direction: column;
     align-items: center;
-    gap: 20px; /* Reduced gap between cards */
   }
 
   .card {
-    max-width: 90%; /* Ensure cards take full width on smaller screens */
-    margin: 10px auto; /* Center the cards */
-  }
-
-  .card h3 {
-    font-size: 1.2rem; /* Decrease font size */
-  }
-
-  .card p {
-    font-size: 0.9rem; /* Smaller text for better readability */
+    max-width: 90%;
   }
 }
 
-/* Final Adjustments */
-@media (max-width: 480px) {
-  .hero {
-    height: auto; /* Allow the hero section to adjust to content */
-  }
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
-  .overlay {
-    padding: 20px; /* Even smaller padding */
-    text-align: center;
-  }
-
-  .tagline {
-    font-size: 2.5rem; /* Further decrease tagline size */
-  }
-
-  .ctaButton {
-    padding: 10px 20px; /* Smaller padding for mobile screens */
-    font-size: 1rem; /* Reduce font size */
-  }
-
-  .features h2 {
-    font-size: 1.6rem; /* Adjust feature section heading */
-  }
-
-  .card {
-    max-width: 100%; /* Ensure the cards take full width */
-  }
-
-  .text1, .text2 {
-    font-size: 0.9rem; /* Adjust text sizes for smaller screens */
-  }
+.footer p {
+  font-size: 1rem;
 }

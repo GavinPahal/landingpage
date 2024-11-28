@@ -203,8 +203,6 @@ body {
 
 .card:first-child p {
   text-align: center; /* Center-align the text for the first card */
-  max-width: 260px; /* Ensure text does not overflow the card */
-  margin: 0 auto;
 }
 
 .card img {
@@ -325,35 +323,7 @@ body {
   }
 }
 
-/* Final Adjustments */
-@media (max-width: 480px) {
-  .hero {
-    height: auto; /* Allow the hero section to adjust to content */
-  }
-
-  .overlay {
-    padding: 20px; /* Even smaller padding */
-    text-align: center;
-  }
-
-  .tagline {
-    font-size: 2.5rem; /* Further decrease tagline size */
-  }
-
-  .ctaButton {
-    padding: 10px 20px; /* Smaller padding for mobile screens */
-    font-size: 1rem; /* Reduce font size */
-  }
-
-  .features h2 {
-    font-size: 1.6rem; /* Adjust feature section heading */
-  }
-
-  .card {
-    max-width: 100%; /* Ensure the cards take full width */
-  }
-
-  .text1, .text2 {
-    font-size: 0.9rem; /* Adjust text sizes for smaller screens */
-  }
-}
+/* Footer Adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15

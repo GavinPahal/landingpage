@@ -1,0 +1,116 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden;
+  background-color: #f4f4f4;
+}
+
+/* Features Section */
+.features {
+  padding: 50px 20px;
+  background-color: #2d9f71;
+  color: white;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Info Cards */
+.infoCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px; /* Even spacing between cards */
+  margin: 40px 0;
+}
+
+.card {
+  background-color: #fff;
+  color: #2d2d2d;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* Uniform width for all cards */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0 auto;
+  max-width: 260px; /* Ensures consistent text box width */
+  text-align: justify;
+}
+
+/* Ensures even height for cards */
+.card {
+  min-height: 350px;
+  max-height: 400px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .infoCards {
+    flex-direction: column;
+    gap: 30px; /* Reduced gap for smaller screens */
+  }
+
+  .card {
+    width: 90%; /* Full-width cards on mobile */
+    max-width: 350px;
+  }
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+}

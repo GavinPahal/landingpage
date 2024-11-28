@@ -33,7 +33,7 @@ export default function Hero() {
             </span>
           </p>
           <a href="#demo" className="ctaButton">
-            TRY DEMO
+            GET A DEMO
           </a>
         </div>
       </div>

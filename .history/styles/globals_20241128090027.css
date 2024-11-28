@@ -18,6 +18,9 @@ body {
   height: 100vh;
   width: 100%; /* Ensure the hero section spans the full width */
   background-color: #2d2d2d; /* Dark background to contrast with the image */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .imageWrapper {
@@ -47,17 +50,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding: 60px 40px; /* Increased padding for more space */
-  text-align: left;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
 }
 
 .heroTitle {
-  display: flex;
-  align-items: center; /* Align logo and title horizontally */
-  margin-bottom: 40px; /* Space between title and the rest of the content */
-  position: relative; /* Allow positioning adjustments */
-  top: -80px; /* Move the logo and title even higher */
+  margin-bottom: 30px; /* Space between title and the rest of the content */
+  position: relative;
 }
 
 .heroTitle img {
@@ -65,44 +65,41 @@ body {
 }
 
 .heroTitle h1 {
-  font-size: 2rem; /* Bigger font for app name */
+  font-size: 2.5rem; /* Bigger font for app name */
   font-weight: bold;
   color: #ffffff; /* Bright color to stand out */
   text-transform: uppercase;
 }
 
 .tagline {
-  font-size: 5rem; /* Make "BEST NATURE APP" 5rem */
+  font-size: 4rem; /* Make "BEST NATURE APP" 4rem */
   font-weight: bold;
   margin-bottom: 0; /* Remove extra space between the lines */
   color: #ffffff; /* Striking color */
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); /* Enhanced text visibility */
   line-height: 1.1; /* Adjust line-height to decrease space between lines */
   letter-spacing: 1.5px;
-  display: block;
-  max-width: 100%; /* Ensure text doesn't overflow */
 }
 
 .bestNature {
   display: block;
-  font-size: 3rem; /* Adjust to smaller font size for the first part */
+  font-size: 2.5rem; /* Adjust to smaller font size for the first part */
 }
 
 .appEver {
   display: block;
   margin-top: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .subTagline {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 20px;
   margin-bottom: 40px;
   line-height: 1.6;
   max-width: 650px;
   color: white;
   letter-spacing: 0.5px;
-  text-align: left;
 }
 
 .demoText {
@@ -128,10 +125,11 @@ body {
   border: none;
   border-radius: 50px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
   text-decoration: none;
+  width: auto;
 }
 
 .ctaButton:hover {
@@ -144,12 +142,11 @@ body {
 
 .rightImageWrapper {
   position: absolute;
-  left: 62%;
-  bottom: 20px;
-  width: 400px;
+  left: 50%;
+  bottom: 10px;
+  width: 300px;
   height: auto;
   z-index: 2;
-  margin-top: 100px;
 }
 
 .rightImageContainer {
@@ -165,6 +162,7 @@ body {
   object-fit: cover;
 }
 
+/* Feature Section */
 .features {
   padding: 50px 20px;
   color: white;
@@ -186,7 +184,7 @@ body {
 .infoCards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   gap: 30px;
   margin-bottom: 40px;
 }
@@ -194,26 +192,25 @@ body {
 .card {
   text-align: center;
   margin: 0 auto; /* Ensure cards are centered */
-}
-
-.card:first-child { /* Target the first feature card */
-  max-width: 400px; /* Restrict width for a cleaner layout */
-  margin: 20px auto; /* Center the card horizontally and add spacing */
-}
-
-.card:first-child p {
-  text-align: center; /* Center-align the text for the first card */
-  max-width: 260px; /* Ensure text does not overflow the card */
-  margin: 0 auto;
+  max-width: 300px; /* Ensure cards have a fixed width */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow for card separation */
+  transition: transform 0.3s ease-in-out;
 }
 
 .card img {
   margin-bottom: 15px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .card h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: bold;
   color: #000000;
   margin-bottom: 10px;
 }
@@ -222,9 +219,12 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: #000000;
-  max-width: 260px;
-  margin: 0 auto;
   text-align: left;
+  margin: 0 auto;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Add hover effect */
 }
 
 .text1 {
@@ -251,6 +251,7 @@ body {
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column; /* Stack elements vertically on smaller screens */
+    padding: 20px;
   }
 
   .overlay {
@@ -325,35 +326,13 @@ body {
   }
 }
 
-/* Final Adjustments */
-@media (max-width: 480px) {
-  .hero {
-    height: auto; /* Allow the hero section to adjust to content */
+/* Footer Adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 10px; /* Adjust footer padding */
   }
 
-  .overlay {
-    padding: 20px; /* Even smaller padding */
-    text-align: center;
-  }
-
-  .tagline {
-    font-size: 2.5rem; /* Further decrease tagline size */
-  }
-
-  .ctaButton {
-    padding: 10px 20px; /* Smaller padding for mobile screens */
-    font-size: 1rem; /* Reduce font size */
-  }
-
-  .features h2 {
-    font-size: 1.6rem; /* Adjust feature section heading */
-  }
-
-  .card {
-    max-width: 100%; /* Ensure the cards take full width */
-  }
-
-  .text1, .text2 {
-    font-size: 0.9rem; /* Adjust text sizes for smaller screens */
+  .footer p {
+    font-size: 0.9rem; /* Slightly smaller text for footer */
   }
 }
