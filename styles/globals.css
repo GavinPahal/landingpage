@@ -90,34 +90,33 @@ body {
 
 .appEver {
   display: block;
-  margin-top: 0; /* Remove the top margin to reduce space between lines */
-  font-size: 3rem; /* Adjust to smaller font size for the second part */
+  margin-top: 0; 
+  font-size: 3rem; 
 }
 
-/* Sub-Tagline (Your paragraph) */
 .subTagline {
-  font-size: 1.2rem; /* Adjusted font size for readability */
-  margin-top: 20px; /* Space between tagline and sub-tagline */
-  margin-bottom: 40px; /* More space beneath the tagline */
+  font-size: 1.2rem; 
+  margin-top: 20px; 
+  margin-bottom: 40px; 
   line-height: 1.6;
-  max-width: 650px; /* Ensures the text does not stretch too wide */
-  color: white; /* Ensures text stands out against the dark background */
-  letter-spacing: 0.5px; /* Light letter-spacing for better legibility */
-  text-align: left; /* Aligns text to the left */
+  max-width: 650px;
+  color: white; 
+  letter-spacing: 0.5px; 
+  text-align: left;
 }
 
 .demoText {
   display: block;
-  font-size: 1.4rem; /* Font size for the first part */
-  font-weight: bold; /* Emphasize the first part */
+  font-size: 1.4rem; 
+  font-weight: bold; 
 }
 
 .natureText {
   display: block;
-  font-size: 1.2rem; /* Font size for the second part */
-  margin-top: 10px; /* Space between the two parts */
-  font-style: italic; /* Optional: make the second part italic */
-  letter-spacing: 0.3px; /* Slightly reduced letter-spacing */
+  font-size: 1.2rem; 
+  margin-top: 10px; 
+  font-style: italic; 
+  letter-spacing: 0.3px; 
 }
 
 /* CTA Button */
@@ -129,7 +128,7 @@ body {
   border: none;
   border-radius: 50px;
   text-align: center;
-  margin-top: 60px; /* Increased margin-top to add space between the tagline and the button */
+  margin-top: 60px; 
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
   text-decoration: none;
@@ -161,36 +160,34 @@ body {
 }
 
 .rightImageContainer img {
-  width: 100%; /* Make the image take full width */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; 
+  height: auto; 
   border-radius: 8px;
-  object-fit: cover; /* Ensure the image is well-fitted */
+  object-fit: cover;
 }
 
-/* Core Values Section */
+
 .features {
-  padding: 50px 20px; /* Add padding for spacing */
-  background-color: #2d9f71; /* Green background color */
-  color: white; /* White text color */
-  text-align: center; /* Center align text */
+  padding: 50px 20px; 
+  color: white; 
+  text-align: center; 
 }
 
 .features h2 {
-  font-size: 2.5rem; /* Large font for section title */
+  font-size: 2.5rem; 
   font-weight: bold;
-  color: #ffffff; /* White text color for title */
-  margin-bottom: 30px; /* Space below the title */
-  text-transform: uppercase; /* Make the title uppercase */
+  color: #ffffff; 
+  margin-bottom: 30px; 
+  text-transform: uppercase; 
   letter-spacing: 1px;
 }
 
-/* Remove Core Value Cards */
 .infoCards {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  justify-content: space-around; /* Space out the cards evenly */
-  gap: 30px; /* Space between cards */
-  margin-bottom: 40px; /* Added space below the cards for separation */
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  gap: 30px; 
+  margin-bottom: 40px; 
 }
 
 

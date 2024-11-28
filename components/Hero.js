@@ -38,15 +38,15 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* New Image on the right side */}
+      
       <div className="rightImageWrapper">
         <div className="rightImageContainer">
           <Image
-            src="/images/phone.png" // Replace with your image path
+            src="/images/phone.png"
             alt="New Image"
             layout="intrinsic"
-            width={500} // Adjust the width based on your preference
-            height={500} // Adjust the height based on your preference
+            width={500} 
+            height={500} 
           />
         </div>
       </div>
