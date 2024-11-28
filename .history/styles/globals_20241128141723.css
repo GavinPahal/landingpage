@@ -165,10 +165,16 @@ body {
   object-fit: cover;
 }
 
+/* Features Section */
 .features {
   padding: 50px 20px;
+  color: white;
   text-align: center;
+  display: flex; /* Add flexbox to align items */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
 }
+
 .features h2 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -181,25 +187,15 @@ body {
 .infoCards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 30px;
+  justify-content: space-between; /* Ensure cards are pushed outward */
+  gap: 50px; /* Increase space between cards */
   margin-bottom: 40px;
 }
 
 .card {
   text-align: center;
-  margin: 0 auto; /* Ensure cards are centered */
-}
-
-.card:first-child { /* Target the first feature card */
-  max-width: 400px; /* Restrict width for a cleaner layout */
-  margin: 20px auto; /* Center the card horizontally and add spacing */
-}
-
-.card:first-child p {
-  text-align: left; /* Center-align the text for the first card */
-  max-width: 280x; /* Ensure text does not overflow the card */
-  margin: 0 auto;
+  max-width: 300px; /* Limit the width of each card */
+  margin: 0; /* Remove auto margin to prevent centering */
 }
 
 .card img {
@@ -222,48 +218,9 @@ body {
   text-align: left;
 }
 
-.text1 {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #000000;
-  max-width: 250px;
-  margin: 0 auto;
-  text-align: left;
-}
+/* Responsive Design */
 
-.text2 {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #000000;
-  max-width: 250px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.missionStatement {
-  text-align: center; /* Center the text */
-  margin-bottom: 40px; /* Add some spacing below the mission statement */
-  padding: 20px;
-  border-radius: 8px; /* Rounded corners */
-}
-
-.missionStatement h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.missionStatement p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #555;
-  max-width: 800px;
-  margin: 0 auto; /* Center the paragraph */
-}
-
-
-
+/* Hero Section Adjustments for smaller screens */
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column; /* Stack elements vertically on smaller screens */
@@ -305,71 +262,4 @@ body {
 @media (max-width: 768px) {
   .ctaButton {
     padding: 12px 30px; /* Reduced padding for better proportion on small screens */
-    font-size: 1.2rem; /* Smaller font size */
-    width: 90%; /* Allow the button to take up more space on smaller screens */
-    margin-top: 40px; /* Reduced top margin */
-  }
-}
-
-/* Feature Section Adjustments */
-@media (max-width: 768px) {
-  .features {
-    padding: 30px 20px; /* Reduce padding */
-  }
-
-  .features h2 {
-    font-size: 2rem; /* Smaller font size for headings */
-  }
-
-  .infoCards {
-    flex-direction: column; /* Stack cards vertically */
-    align-items: center;
-    gap: 20px; /* Reduced gap between cards */
-  }
-
-  .card {
-    max-width: 90%; /* Ensure cards take full width on smaller screens */
-    margin: 10px auto; /* Center the cards */
-  }
-
-  .card h3 {
-    font-size: 1.2rem; /* Decrease font size */
-  }
-
-  .card p {
-    font-size: 0.9rem; /* Smaller text for better readability */
-  }
-}
-
-/* Final Adjustments */
-@media (max-width: 480px) {
-  .hero {
-    height: auto; /* Allow the hero section to adjust to content */
-  }
-
-  .overlay {
-    padding: 20px; /* Even smaller padding */
-    text-align: center;
-  }
-
-  .tagline {
-    font-size: 2.5rem; /* Further decrease tagline size */
-  }
-
-  .ctaButton {
-    padding: 10px 20px; /* Smaller padding for mobile screens */
-    font-size: 1rem; /* Reduce font size */
-  }
-
-  .features h2 {
-    font-size: 1.6rem; /* Adjust feature section heading */
-  }
-
-  .card {
-    max-width: 100%; /* Ensure the cards take full width */
-  }
-
-  .text1, .text2 {
-    font-size: 0.9rem; /* Adjust text sizes for smaller screens */
-  }
-}
+    font-size: 1.2rem; /* Smaller font si

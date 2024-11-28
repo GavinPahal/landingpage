@@ -42,8 +42,8 @@ export default function Features() {
           <h3>Multiple User Profiles</h3>
           <p>
             Users can create multiple profiles within one account, enabling
-            personalized dietary management and preferences, 
-            like allergies and  language, for each family member or friend.
+            personalized dietary management and preferences, like allergies and
+            language, for each family member or friend.
           </p>
         </div>
       </div>

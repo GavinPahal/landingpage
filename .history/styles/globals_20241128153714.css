@@ -198,7 +198,7 @@ body {
 
 .card:first-child p {
   text-align: left; /* Center-align the text for the first card */
-  max-width: 280x; /* Ensure text does not overflow the card */
+  max-width: 300px; /* Ensure text does not overflow the card */
   margin: 0 auto;
 }
 
@@ -239,29 +239,6 @@ body {
   margin: 0 auto;
   text-align: left;
 }
-
-.missionStatement {
-  text-align: center; /* Center the text */
-  margin-bottom: 40px; /* Add some spacing below the mission statement */
-  padding: 20px;
-  border-radius: 8px; /* Rounded corners */
-}
-
-.missionStatement h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.missionStatement p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #555;
-  max-width: 800px;
-  margin: 0 auto; /* Center the paragraph */
-}
-
 
 
 @media (max-width: 1024px) {

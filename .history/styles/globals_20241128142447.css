@@ -1,0 +1,178 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Times New Roman, serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  background-color: #00C9A2;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #035343;
+}
+
+/* Features Section */
+.features {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.infoCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 auto;
+}
+
+/* AI Chatbot Section */
+.aichatbot {
+  background-color: #f1f1f1;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.aichatbot h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.aichatbot p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.aichatbot .ctaButton {
+  background-color: #00C9A2;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.aichatbot .ctaButton:hover {
+  background-color: #035343;
+}
+
+/* Food Recall Section */
+.foodrecall {
+  padding: 40px 20px;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.foodrecall h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.foodrecall p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.foodrecall .ctaButton {
+  background-color: #00C9A2;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.foodrecall .ctaButton:hover {
+  background-color: #035343;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .infoCards {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
