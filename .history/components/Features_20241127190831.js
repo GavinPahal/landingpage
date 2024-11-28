@@ -4,7 +4,7 @@ export default function Features() {
   return (
     <section className="features">
       <div className="infoCards">
-        <div className="text1">
+        <div className="card2">
           <Image
             src="/images/iconamoon_scanner (1).jpg"
             alt="Feature 1"
@@ -15,7 +15,7 @@ export default function Features() {
           <p>This step allows users to quickly and effortlessly scan a product's barcode or packaging using the app.
              It eliminates the need for extensive research by instantly gathering all relevant ingredient and allergen information. </p>
         </div>
-        <div className="text2">
+        <div className="card3">
           <Image
             src="/images/magnifying.jpg"
             alt="Feature 2"

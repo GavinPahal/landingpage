@@ -1,0 +1,249 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Hero Section */
+.hero {
+  display: flex; /* Use flexbox to align elements */
+  position: relative;
+  height: 100vh;
+  width: 100%; /* Ensure the hero section spans the full width */
+  background-color: #2d2d2d; /* Dark background to contrast with the image */
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%; /* Left side takes full width */
+  height: 100%;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(8px); /* Add blur effect to the image */
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay to ensure text stands out */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 40px; /* Increased padding for more space */
+  text-align: left;
+}
+
+.heroTitle {
+  display: flex;
+  align-items: center; /* Align logo and title horizontally */
+  margin-bottom: 40px; /* Space between title and the rest of the content */
+  position: relative; /* Allow positioning adjustments */
+  top: -80px; /* Move the logo and title even higher */
+}
+
+.heroTitle img {
+  margin-right: 20px; /* Add space between logo and title */
+}
+
+.heroTitle h1 {
+  font-size: 2rem; /* Bigger font for app name */
+  font-weight: bold;
+  color: #ffffff; /* Bright color to stand out */
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-size: 5rem; /* Make "BEST NATURE APP" 5rem */
+  font-weight: bold;
+  margin-bottom: 0; /* Remove extra space between the lines */
+  color: #ffffff; /* Striking color */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); /* Enhanced text visibility */
+  line-height: 1.1; /* Adjust line-height to decrease space between lines */
+  letter-spacing: 1.5px;
+  display: block;
+  max-width: 100%; /* Ensure text doesn't overflow */
+}
+
+.bestNature {
+  display: block;
+  font-size: 3rem; /* Adjust to smaller font size for the first part */
+}
+
+.appEver {
+  display: block;
+  margin-top: 0; 
+  font-size: 3rem; 
+}
+
+.subTagline {
+  font-size: 1.2rem; 
+  margin-top: 20px; 
+  margin-bottom: 40px; 
+  line-height: 1.6;
+  max-width: 650px;
+  color: white; 
+  letter-spacing: 0.5px; 
+  text-align: left;
+}
+
+.demoText {
+  display: block;
+  font-size: 1.4rem; 
+  font-weight: bold; 
+}
+
+.natureText {
+  display: block;
+  font-size: 1.2rem; 
+  margin-top: 10px; 
+  font-style: italic; 
+  letter-spacing: 0.3px; 
+}
+
+/* CTA Button */
+.ctaButton {
+  background-color: #00C9A2;
+  color: #ffffff;
+  padding: 15px 40px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 60px; 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.ctaButton:hover {
+  background-color: #035343;
+}
+
+.ctaButton:focus {
+  outline: none;
+}
+
+
+.rightImageWrapper {
+  position: absolute;
+  left: 62%; 
+  bottom: 20px; 
+  width: 400px; 
+  height: auto;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.rightImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.rightImageContainer img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+.features {
+  padding: 50px 20px; 
+  color: white; 
+  text-align: center; 
+}
+
+.features h2 {
+  font-size: 2.5rem; 
+  font-weight: bold;
+  color: #ffffff; 
+  margin-bottom: 30px; 
+  text-transform: uppercase; 
+  letter-spacing: 1px;
+}
+
+.infoCards {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  gap: 30px; 
+  margin-bottom: 40px; 
+}
+
+
+.card {
+  text-align: center; 
+}
+
+.card img {
+  margin-bottom: 15px; 
+}
+
+.card h3 {
+  font-size: 1.5rem; 
+  font-weight: 600;
+  color: #000000; 
+  margin-bottom: 10px; 
+}
+
+.card p {
+  font-size: 1rem; 
+  line-height: 1.6; 
+  color: #000000; 
+  max-width: 260px;
+  margin: 0 auto; 
+  text-align: left;
+  
+}
+
+.text1{
+  font-size: 1rem; 
+  line-height: 1.6; 
+  color: #000000; 
+  max-width: 260px;
+  margin: 0 auto; 
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .infoCards {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .card {
+    max-width: 90%; 
+  }
+}
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+}

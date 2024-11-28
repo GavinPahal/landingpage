@@ -4,7 +4,7 @@ export default function Features() {
   return (
     <section className="features">
       <div className="infoCards">
-        <div className="card">
+        <div className="card2">
           <Image
             src="/images/chatbot.jpg"
             alt="Feature 1"
