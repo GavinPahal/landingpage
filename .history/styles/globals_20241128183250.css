@@ -265,62 +265,76 @@ body {
   text-align: left;
 }
 
-
+/* Core Values Section */
 .coreValues {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 20px;
-}
-
-.coreMission {
+  padding: 50px 20px;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .coreMission h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
+  color: #333;
+  margin-bottom: 50px;
 }
 
+/* Value Cards Section */
 .valueCards {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .valueCard {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+  gap: 20px;
 }
 
-.textContent {
+.valueCard .textContent {
   flex: 1;
 }
 
-.textContent h3 {
-  color: #00C9A2;
+.valueCard .textContent h3 {
   font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
   margin-bottom: 10px;
 }
 
-.textContent p {
-  max-width: 700px;
+.valueCard .textContent p {
   font-size: 1rem;
-  margin-bottom: 10px;
+  line-height: 1.6;
   color: #555;
 }
 
-.imageContent {
-  margin-left: 20px;
+.valueCard img {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.imageContent img {
-  width: 150px;
-  height: 150px;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .coreValues {
+    padding: 30px 10px;
+  }
 
+  .valueCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .valueCard img {
+    margin-top: 15px;
+  }
+}
 
 
 @media (max-width: 1024px) {

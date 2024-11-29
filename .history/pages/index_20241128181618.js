@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Footer from "../components/Footer";
 import Product from "../components/Product"
-import Value from "../components/Value"
+import Value from "../components/value"
 
 export default function Home() {
   return (

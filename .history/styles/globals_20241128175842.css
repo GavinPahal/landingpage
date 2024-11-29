@@ -242,18 +242,17 @@ body {
 
 .missionStatement {
   text-align: center; /* Center the text */
-  margin-bottom: 110px; /* Add some spacing below the mission statement */
+  margin-bottom: 10px; /* Add some spacing below the mission statement */
+  padding: 20px;
   border-radius: 8px; /* Rounded corners */
-  padding-left: 30px;
 }
 
-.missionStatement h1 {
-  font-size: 3rem;
+.missionStatement h2 {
+  font-size: 2rem;
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
   font-weight: bold;
-  padding-right: 40px;
 }
 
 .missionStatement p {
@@ -262,63 +261,6 @@ body {
   color: #555;
   max-width: 710px;
   margin: 0 auto; 
-  text-align: left;
-}
-
-
-.coreValues {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 20px;
-}
-
-.coreMission {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.coreMission h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.valueCards {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.valueCard {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.textContent {
-  flex: 1;
-}
-
-.textContent h3 {
-  color: #00C9A2;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.textContent p {
-  max-width: 700px;
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: #555;
-}
-
-.imageContent {
-  margin-left: 20px;
-}
-
-.imageContent img {
-  width: 150px;
-  height: 150px;
 }
 
 

@@ -2,18 +2,12 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <section className="features">
-      {/* Mission Statement Section */}
-      <div className="missionStatement">
-        <h1>Mission Statement</h1>
-        <p>
-          Our mission is to empower travelers with food allergies and sensitivities by providing a user-friendly, globally accessible app that ensures safety, confidence, and convenience when navigating food choices in unfamiliar environments.
-        </p>
+    <section className="coreValues">
+      <div className="coreMission">
+        <h1>Core Values</h1>
       </div>
-
-      {/* Features Cards Section */}
-      <div className="infoCards">
-        <div className="card" style={{ margin: "0 10px" }}>
+      <div className="valueCards">
+        <div className="valueCard" style={{ margin: "0 10px" }}>
           <Image
             src="/images/iconamoon_scanner (1).jpg"
             alt="Feature 1"
@@ -26,7 +20,7 @@ export default function Features() {
             It eliminates the need for extensive research by instantly gathering all relevant ingredient and allergen information.
           </p>
         </div>
-        <div className="card" style={{ margin: "0 10px" }}>
+        <div className="valueCard" style={{ margin: "0 10px" }}>
           <Image
             src="/images/magnifying.jpg"
             alt="Feature 2"
@@ -39,7 +33,7 @@ export default function Features() {
             and an assessment of the product's suitability based on the user's specific dietary needs and sensitivities.
           </p>
         </div>
-        <div className="card" style={{ margin: "0 10px" }}>
+        <div className="valueCard" style={{ margin: "0 10px" }}>
           <Image
             src="/images/Confident.jpg"
             alt="Feature 3"

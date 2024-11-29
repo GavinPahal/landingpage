@@ -3,12 +3,8 @@ import Image from "next/image";
 export default function Features() {
   return (
     <section className="features">
-      {/* Mission Statement Section */}
       <div className="missionStatement">
-        <h1>Mission Statement</h1>
-        <p>
-          Our mission is to empower travelers with food allergies and sensitivities by providing a user-friendly, globally accessible app that ensures safety, confidence, and convenience when navigating food choices in unfamiliar environments.
-        </p>
+        <h1>Core Values</h1>
       </div>
 
       {/* Features Cards Section */}

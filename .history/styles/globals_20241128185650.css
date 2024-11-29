@@ -300,13 +300,12 @@ body {
 }
 
 .textContent h3 {
-  color: #00C9A2;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .textContent p {
-  max-width: 700px;
+  max-width: 100px;
   font-size: 1rem;
   margin-bottom: 10px;
   color: #555;

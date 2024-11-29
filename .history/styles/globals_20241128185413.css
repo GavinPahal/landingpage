@@ -264,8 +264,6 @@ body {
   margin: 0 auto; 
   text-align: left;
 }
-
-
 .coreValues {
   display: flex;
   flex-direction: column;
@@ -295,30 +293,21 @@ body {
   align-items: center;
 }
 
-.textContent {
-  flex: 1;
+.valueCard img {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
 }
 
-.textContent h3 {
-  color: #00C9A2;
+.valueCard h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-.textContent p {
-  max-width: 700px;
+.valueCard p {
   font-size: 1rem;
   margin-bottom: 10px;
   color: #555;
-}
-
-.imageContent {
-  margin-left: 20px;
-}
-
-.imageContent img {
-  width: 150px;
-  height: 150px;
 }
 
 
