@@ -8,6 +8,7 @@ export default function Features() {
       </div>
 
       <div className="valueCards">
+        {/* Safety */}
         <div className="valueCard" style={{ margin: "0 10px" }}>
           <div className="textContent">
             <h3>Safety</h3>

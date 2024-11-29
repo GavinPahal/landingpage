@@ -279,17 +279,11 @@ body {
   font-weight: bold;
   color: #333;
   text-align: center;
-  margin-bottom: 150px; /* Add spacing below the title */
+  margin-bottom: 40px; /* Add spacing below the title */
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.arrow {
-  width: 50px; /* Adjust the arrow line length */
-  height: 2px; /* Adjust the arrow thickness */
-  background-color: #00C9A2; /* Arrow color */
-  position: relative;
-  margin: 0 15px; /* Adds space between cards */
-}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .hero {

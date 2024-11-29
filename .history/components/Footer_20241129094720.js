@@ -11,7 +11,7 @@ export default function Footer() {
               src="/images/logo.webp"
               alt="Goldibite Logo"
               width={80}
-              height={80}
+              height={290}
             />
           </a>
         </div>

@@ -1,0 +1,152 @@
+/* Mobile-specific Styles */
+@media (max-width: 480px) {
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .overlay {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .heroTitle {
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+  }
+
+  .heroTitle h1 {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+
+  .subTagline {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 10px 30px;
+    margin-top: 20px;
+  }
+
+  .rightImageWrapper {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    bottom: 20px;
+  }
+
+  .rightImageContainer img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  /* Features Section */
+  .features h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .infoCards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 2px;
+    margin: 15px 0;
+  }
+
+  .arrow::after {
+    width: 7px;
+    height: 7px;
+  }
+
+  /* Mission Statement */
+  .missionStatement h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .missionStatement p {
+    font-size: 1rem;
+  }
+
+  /* Core Values */
+  .coreValues {
+    gap: 60px;
+  }
+
+  .valueCard {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textContent h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .textContent p {
+    font-size: 1rem;
+    max-width: 300px;
+  }
+
+  .imageContent img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-contact,
+  .footer-social {
+    margin: 10px 0;
+  }
+
+  .footer-contact h3,
+  .footer-social h3 {
+    font-size: 1rem;
+  }
+
+  .footer-contact p,
+  .footer-social p {
+    font-size: 0.9rem;
+  }
+}

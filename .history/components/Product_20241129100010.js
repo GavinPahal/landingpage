@@ -2,12 +2,9 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <section className="features">
-      <h2>Future Prospects</h2>
-      <div
-        className="infoCards"
-        style={{ gap: "20px", display: "flex", alignItems: "center" }}
-      >
+    <section className="features"> 
+    
+      <div className="infoCards" style={{ gap: "20px", display: "flex", alignItems: "center" }}>
         <div className="card" style={{ margin: "0 10px" }}>
           <Image
             src="/images/chatbot.jpg"
@@ -17,9 +14,9 @@ export default function Features() {
           />
           <h3>AI Chatbot</h3>
           <p>
-            The AI barcode scanner identifies companies, flags ingredient issues
-            or cross-contamination, and alerts users with links to related news
-            or actions.
+            The AI barcode scanner identifies companies, flags ingredient
+            issues or cross-contamination, and alerts users with links to
+            related news or actions.
           </p>
         </div>
 
@@ -54,8 +51,8 @@ export default function Features() {
           <h3>Multiple User Profiles</h3>
           <p>
             Users can create multiple profiles within one account, enabling
-            personalized dietary management and preferences, like allergies and
-            language, for each family member or friend.
+            personalized dietary management and preferences, 
+            like allergies and language, for each family member or friend.
           </p>
         </div>
       </div>
