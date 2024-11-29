@@ -226,10 +226,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 200px; 
 }
 
+.valueCard:nth-child(1) {
+  margin-top: 80px; /* Increased margin for the first value card */
+}
 
+.valueCard:nth-child(2) {
+  margin-top: 70px; /* Increased margin for the second value card */
+}
+
+.valueCard:nth-child(3) {
+  margin-top: 90px; /* Increased margin for the third value card */
+}
 
 .textContent h3 {
   color: #00C9A2;
@@ -241,21 +250,13 @@ body {
   font-size: 1.5rem; /* Further increased font size */
   color: #555;
   max-width: 700px;
-  margin-bottom: 200px; 
 }
 
 .imageContent img {
   width: 250px; /* Further increased image size */
   height: 250px; /* Further increased image size */
   border-radius: 8px;
-  margin-bottom: 200px; 
 }
-.coreMission h1 {
-  text-align: center; /* Center the title */
-  font-weight: bold; /* Make it bold */
-  font-size: 3rem; /* Increase font size */
-}
-
 
 /* Responsive Design */
 @media (max-width: 1024px) {

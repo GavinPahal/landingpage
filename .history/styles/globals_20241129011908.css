@@ -83,14 +83,8 @@ body {
   max-width: 100%;
 }
 
-.bestNature {
+.bestNature, .appEver {
   display: block;
-  font-size: 3rem;
-}
-
-.appEver {
-  display: block;
-  margin-top: 0;
   font-size: 3rem;
 }
 
@@ -105,6 +99,20 @@ body {
   text-align: left;
 }
 
+.demoText {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.natureText {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
 /* CTA Button */
 .ctaButton {
   background-color: #00C9A2;
@@ -113,6 +121,7 @@ body {
   font-size: 1.4rem;
   border: none;
   border-radius: 50px;
+  text-align: center;
   margin-top: 60px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
@@ -132,12 +141,14 @@ body {
   left: 62%;
   bottom: 20px;
   width: 400px;
+  height: auto;
   z-index: 2;
   margin-top: 100px;
 }
 
 .rightImageContainer img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -162,6 +173,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 30px;
+  margin-bottom: 40px;
 }
 
 .card {
@@ -189,10 +201,19 @@ body {
   text-align: left;
 }
 
+.text1, .text2 {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000000;
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 /* Mission Statement */
 .missionStatement {
   text-align: center;
-  margin-bottom: 180px; /* Increased margin at the bottom */
+  margin-bottom: 110px;
   border-radius: 8px;
   padding-left: 30px;
 }
@@ -217,47 +238,54 @@ body {
 .coreValues {
   display: flex;
   flex-direction: column;
-  gap: 120px; /* Increased gap between value cards */
+  gap: 30px;
   padding: 20px;
-  margin-bottom: 200px; /* Added more space at the bottom */
+}
+
+.coreMission {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.coreMission h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.valueCards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .valueCard {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 200px; 
 }
-
-
 
 .textContent h3 {
   color: #00C9A2;
-  font-size: 2.5rem; /* Further increased font size */
-  margin-bottom: 20px; /* Increased space below the title */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .textContent p {
-  font-size: 1.5rem; /* Further increased font size */
-  color: #555;
   max-width: 700px;
-  margin-bottom: 200px; 
+  font-size: 1rem;
+  color: #555;
 }
 
 .imageContent img {
-  width: 250px; /* Further increased image size */
-  height: 250px; /* Further increased image size */
-  border-radius: 8px;
-  margin-bottom: 200px; 
-}
-.coreMission h1 {
-  text-align: center; /* Center the title */
-  font-weight: bold; /* Make it bold */
-  font-size: 3rem; /* Increase font size */
+  width: 150px;
+  height: 150px;
 }
 
+.reverseCard {
+  flex-direction: row-reverse;
+}
 
-/* Responsive Design */
+/* Media Queries */
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column;
@@ -268,10 +296,6 @@ body {
     text-align: center;
   }
 
-  .heroTitle {
-    top: 0;
-  }
-
   .tagline {
     font-size: 3rem;
   }
@@ -280,36 +304,38 @@ body {
     left: 50%;
     bottom: 10px;
     width: 300px;
+    margin-top: 60px;
   }
 }
 
 @media (max-width: 768px) {
   .ctaButton {
+    padding: 12px 30px;
+    font-size: 1.2rem;
     width: 90%;
     margin-top: 40px;
   }
 
-  .features h2 {
-    font-size: 2rem;
-  }
-
-  .infoCards {
-    flex-direction: column;
-    align-items: center;
+  .features {
+    padding: 30px 20px;
   }
 
   .card {
     max-width: 90%;
   }
+
+  .card h3, .card p {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .hero {
-    height: auto;
-  }
-
   .overlay {
     padding: 20px;
+  }
+
+  .tagline {
+    font-size: 2.5rem;
   }
 
   .ctaButton {
@@ -317,11 +343,11 @@ body {
     font-size: 1rem;
   }
 
-  .features h2 {
-    font-size: 1.6rem;
+  .card {
+    max-width: 100%;
   }
 
-  .card p {
+  .text1, .text2 {
     font-size: 0.9rem;
   }
 }

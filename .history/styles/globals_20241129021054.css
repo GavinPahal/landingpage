@@ -248,14 +248,8 @@ body {
   width: 250px; /* Further increased image size */
   height: 250px; /* Further increased image size */
   border-radius: 8px;
-  margin-bottom: 200px; 
+  margin-top: 200px; 
 }
-.coreMission h1 {
-  text-align: center; /* Center the title */
-  font-weight: bold; /* Make it bold */
-  font-size: 3rem; /* Increase font size */
-}
-
 
 /* Responsive Design */
 @media (max-width: 1024px) {

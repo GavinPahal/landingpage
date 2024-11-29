@@ -192,7 +192,7 @@ body {
 /* Mission Statement */
 .missionStatement {
   text-align: center;
-  margin-bottom: 180px; /* Increased margin at the bottom */
+  margin-bottom: 110px;
   border-radius: 8px;
   padding-left: 30px;
 }
@@ -217,45 +217,34 @@ body {
 .coreValues {
   display: flex;
   flex-direction: column;
-  gap: 120px; /* Increased gap between value cards */
+  gap: 50px; /* Increased gap for more space between value cards */
   padding: 20px;
-  margin-bottom: 200px; /* Added more space at the bottom */
+  margin-bottom: 50px; /* Added space at the bottom */
 }
 
 .valueCard {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 200px; 
 }
-
-
 
 .textContent h3 {
   color: #00C9A2;
-  font-size: 2.5rem; /* Further increased font size */
-  margin-bottom: 20px; /* Increased space below the title */
+  font-size: 2rem; /* Increased font size */
+  margin-bottom: 15px; /* Increased space below the title */
 }
 
 .textContent p {
-  font-size: 1.5rem; /* Further increased font size */
+  font-size: 1.2rem; /* Increased font size */
   color: #555;
   max-width: 700px;
-  margin-bottom: 200px; 
 }
 
 .imageContent img {
-  width: 250px; /* Further increased image size */
-  height: 250px; /* Further increased image size */
+  width: 200px; /* Increased image size */
+  height: 200px; /* Increased image size */
   border-radius: 8px;
-  margin-bottom: 200px; 
 }
-.coreMission h1 {
-  text-align: center; /* Center the title */
-  font-weight: bold; /* Make it bold */
-  font-size: 3rem; /* Increase font size */
-}
-
 
 /* Responsive Design */
 @media (max-width: 1024px) {

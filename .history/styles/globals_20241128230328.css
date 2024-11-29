@@ -1,0 +1,71 @@
+/* Core Values Section Styling */
+.coreValues {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.coreMission {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.coreMission h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Value Cards Container */
+.valueCards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual Card Styling */
+.valueCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Reversed Card (Text on Right, Image on Left) */
+.reverseCard {
+  flex-direction: row-reverse;
+}
+
+/* Text Content Styling */
+.textContent {
+  flex: 1;
+}
+
+.textContent h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.textContent p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Image Content Styling */
+.imageContent {
+  flex-shrink: 0;
+}
+
+.imageContent img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Spacing Adjustments for Reversed Cards */
+.reverseCard .imageContent {
+  margin-left: 0;
+  margin-right: 20px;
+}

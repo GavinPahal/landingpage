@@ -146,6 +146,7 @@ body {
 .features {
   padding: 50px 20px;
   text-align: center;
+  margin-bottom: 60px; /* Added space at the bottom */
 }
 
 .features h2 {
@@ -192,7 +193,7 @@ body {
 /* Mission Statement */
 .missionStatement {
   text-align: center;
-  margin-bottom: 180px; /* Increased margin at the bottom */
+  margin-bottom: 110px;
   border-radius: 8px;
   padding-left: 30px;
 }
@@ -211,25 +212,35 @@ body {
   max-width: 710px;
   margin: 0 auto;
   text-align: left;
+  margin-bottom: 60px; /* Added space at the bottom */
 }
 
 /* Core Values */
 .coreValues {
   display: flex;
   flex-direction: column;
-  gap: 120px; /* Increased gap between value cards */
+  gap: 90px; /* Increased gap between value cards */
   padding: 20px;
-  margin-bottom: 200px; /* Added more space at the bottom */
+  margin-bottom: 120px; /* Added more space at the bottom */
 }
 
 .valueCard {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 200px; 
 }
 
+.valueCard:nth-child(1) {
+  margin-top: 60px; /* Added more margin to push the first value card down */
+}
 
+.valueCard:nth-child(2) {
+  margin-top: 50px; /* Added more margin to push the second value card down */
+}
+
+.valueCard:nth-child(3) {
+  margin-top: 70px; /* Added more margin to push the third value card down */
+}
 
 .textContent h3 {
   color: #00C9A2;
@@ -241,21 +252,13 @@ body {
   font-size: 1.5rem; /* Further increased font size */
   color: #555;
   max-width: 700px;
-  margin-bottom: 200px; 
 }
 
 .imageContent img {
   width: 250px; /* Further increased image size */
   height: 250px; /* Further increased image size */
   border-radius: 8px;
-  margin-bottom: 200px; 
 }
-.coreMission h1 {
-  text-align: center; /* Center the title */
-  font-weight: bold; /* Make it bold */
-  font-size: 3rem; /* Increase font size */
-}
-
 
 /* Responsive Design */
 @media (max-width: 1024px) {
