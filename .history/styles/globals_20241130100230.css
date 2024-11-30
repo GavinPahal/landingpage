@@ -323,69 +323,41 @@ body {
   max-width: 220px;
 }
 
-/* Responsive Design for iPhone 14 Pro Max */
-@media (max-width: 430px) {
-  .hero {
+/* Responsive Design */
+@media (max-width: 768px) {
+  .valueCard {
     flex-direction: column;
-    height: auto;
-  }
-
-  .heroTitle h1 {
-    font-size: 1.5rem;
     text-align: center;
   }
 
+  .ctaButton {
+    padding: 12px 30px;
+  }
+
+  .phoneImage {
+    max-width: 200px; /* Smaller image for smaller screens */
+    top: 40%;
+    right: 5%; /* Adjust position */
+  }
+}
+
+@media (max-width: 430px) {
   .tagline {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .ctaButton {
-    font-size: 1.1rem;
-    padding: 12px 30px;
-    margin-top: 40px;
-  }
-
-  .rightImageWrapper {
-    width: 80%;
-    position: relative;
-    margin-top: 20px;
-  }
-
-  .rightImageContainer img {
-    width: 100%;
-    height: auto;
-  }
-
-  .missionStatement {
-    padding: 30px 15px;
-    max-width: 100%;
-  }
-
-  .missionStatement p {
-    font-size: 1rem;
-  }
-
-  .features h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
   .infoCards {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
 
-  .card img {
-    width: 70px;
-    height: 70px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-contact,
-  .footer-social {
-    text-align: center;
+  .phoneImage {
+    max-width: 180px; /* Even smaller image for phones */
+    top: 30%; /* Adjust position */
+    right: 2%; /* Adjust position */
   }
 }

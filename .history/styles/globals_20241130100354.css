@@ -11,6 +11,32 @@ body {
   overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
+/* Mission Statement Section */
+.missionStatement {
+  padding: 40px 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.missionStatement h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.missionStatement p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* Hero Section */
 .hero {
   display: flex;
@@ -42,7 +68,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   display: flex;
   flex-direction: column;
@@ -50,7 +76,6 @@ body {
   align-items: flex-start;
   padding: 60px 40px;
   text-align: left;
-  z-index: 1;
 }
 
 .heroTitle {
@@ -101,26 +126,6 @@ body {
   text-align: center;
 }
 
-/* Individual Subhead Classes */
-.demoText {
-  font-size: 1.4rem;
-  color: #ffffff;
-  font-weight: 600;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.natureText {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-top: 10px;
-  font-weight: 400;
-  display: block;
-  letter-spacing: 0.5px;
-  font-style: italic;
-  margin-left: 0px;
-}
-
 /* CTA Button */
 .ctaButton {
   background-color: #00C9A2;
@@ -143,47 +148,6 @@ body {
 
 .ctaButton:focus {
   outline: none;
-}
-
-.rightImageWrapper {
-  position: absolute;
-  left: 62%;
-  bottom: 0;
-  width: 400px;
-  z-index: 2;
-  margin-top: 100px;
-}
-
-.rightImageContainer img {
-  width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-/* Mission Statement Section */
-.missionStatement {
-  padding: 40px 20px;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  border-radius: 10px;
-  margin: 30px auto;
-  max-width: 900px;
-}
-
-.missionStatement h1 {
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.missionStatement p {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #000000;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 /* Features Section */
@@ -323,55 +287,77 @@ body {
   max-width: 220px;
 }
 
-/* Responsive Design for iPhone 14 Pro Max */
-@media (max-width: 430px) {
-  .hero {
-    flex-direction: column;
-    height: auto;
-  }
-
+/* Responsive Design */
+@media (max-width: 1024px) {
   .heroTitle h1 {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.8rem;
   }
 
   .tagline {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 
   .ctaButton {
-    font-size: 1.1rem;
     padding: 12px 30px;
-    margin-top: 40px;
-  }
-
-  .rightImageWrapper {
-    width: 80%;
-    position: relative;
-    margin-top: 20px;
-  }
-
-  .rightImageContainer img {
-    width: 100%;
-    height: auto;
-  }
-
-  .missionStatement {
-    padding: 30px 15px;
-    max-width: 100%;
-  }
-
-  .missionStatement p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .features h2 {
     font-size: 2rem;
   }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .heroTitle {
+    margin-bottom: 20px;
+  }
+
+  .overlay {
+    padding: 50px 30px;
+  }
+
+  .ctaButton {
+    padding: 10px 25px;
+    font-size: 1.3rem;
+  }
+
+  .phoneImage {
+    max-width: 180px; /* Adjust size for smaller screens */
+    top: 40%;
+    right: 5%;
+  }
 
   .infoCards {
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .tagline {
+    font-size: 4rem;
+  }
+
+  .ctaButton {
+    font-size: 1.2rem;
+  }
+
+  .phoneImage {
+    max-width: 150px; /* Smaller image for small screens */
+    top: 30%;
+    right: 2%;
+  }
+
+  .features h2 {
+    font-size: 1.8rem;
   }
 
   .card img {
@@ -379,13 +365,7 @@ body {
     height: 70px;
   }
 
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-contact,
-  .footer-social {
-    text-align: center;
+  .card h3 {
+    font-size: 1.2rem;
   }
 }

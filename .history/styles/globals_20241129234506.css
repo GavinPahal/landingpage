@@ -1,0 +1,89 @@
+/* Core Values Section */
+.coreValues {
+  display: flex;
+  flex-direction: column;
+  gap: 80px; /* Reduced gap for smaller screens */
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.valueCard {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px; /* Add gap between items */
+  margin-bottom: 100px; /* Adjust spacing for better layout */
+}
+
+.textContent {
+  flex: 1;
+  padding: 10px;
+}
+
+.textContent h3 {
+  color: #00C9A2;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.textContent p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 100%; /* Allow flexibility for smaller screens */
+}
+
+.imageContent {
+  flex: 1;
+  text-align: center; /* Center images on smaller screens */
+}
+
+.imageContent img {
+  width: 100%; /* Set width to be responsive */
+  max-width: 250px; /* Limit maximum size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+/* Responsive Design for Core Values Section */
+@media (max-width: 768px) {
+  .valueCard {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center-align content */
+  }
+
+  .textContent h3 {
+    font-size: 1.8rem; /* Adjust font size */
+  }
+
+  .textContent p {
+    font-size: 1.1rem; /* Adjust font size */
+  }
+
+  .imageContent img {
+    max-width: 200px; /* Reduce image size */
+  }
+}
+
+@media (max-width: 430px) {
+  .textContent h3 {
+    font-size: 1.6rem; /* Smaller heading size */
+  }
+
+  .textContent p {
+    font-size: 1rem; /* Smaller paragraph size */
+  }
+
+  .imageContent img {
+    max-width: 150px; /* Further reduce image size */
+  }
+
+  .coreValues {
+    gap: 60px; /* Reduce spacing between cards */
+    margin-bottom: 50px; /* Reduce bottom margin */
+  }
+
+  .valueCard {
+    gap: 20px; /* Reduce spacing between text and image */
+  }
+}

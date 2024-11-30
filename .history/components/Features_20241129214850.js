@@ -4,13 +4,12 @@ export default function Features() {
   return (
     <section className="features">
       {/* Mission Statement Section */}
-      <section class="missionStatement">
-  <h1>Mission Statement</h1>
-  <p>
-    Our mission is to empower travelers with food allergies and sensitivities by providing a user-friendly, globally accessible app that ensures safety, confidence, and convenience when navigating food choices in unfamiliar environments.
-  </p>
-</section>
-
+      <div className="missionStatement">
+        <h1>Mission Statement</h1>
+        <p>
+          Our mission is to empower travelers with food allergies and sensitivities by providing a user-friendly, globally accessible app that ensures safety, confidence, and convenience when navigating food choices in unfamiliar environments.
+        </p>
+      </div>
 
       <div className="infoCards">
         {/* Feature 1 */}

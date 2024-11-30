@@ -1,0 +1,376 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  background-color: #f9f9f9; /* Light global background */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #2d2d2d;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(8px);
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 40px;
+  text-align: left;
+}
+
+.heroTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+  top: -80px;
+}
+
+.heroTitle img {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.heroTitle h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+  display: block;
+  max-width: 100%;
+}
+
+.bestNature {
+  display: block;
+  font-size: 3rem;
+}
+
+.appEver {
+  display: block;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+/* Subhead Lines */
+.subTagline {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 600px;
+  color: white;
+  text-align: center; /* Ensure alignment matches the centered design */
+}
+
+.demoText {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.natureText {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 10px;
+  font-weight: 400;
+  display: block;
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
+
+/* CTA Button */
+.ctaButton {
+  background-color: #00C9A2;
+  color: #ffffff;
+  padding: 15px 40px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 50px;
+  margin-top: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.ctaButton:hover {
+  background-color: #035343;
+}
+
+.ctaButton:focus {
+  outline: none;
+}
+
+.rightImageWrapper {
+  position: absolute;
+  left: 62%;
+  bottom: 0px;
+  width: 400px;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.rightImageContainer img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Features Section */
+.features {
+  background-color: #f5f5f5; /* Light background for contrast */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.features h1,
+.features h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2d2d2d; /* Darker text color */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Mission Statement */
+.missionStatement {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+.missionStatement h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00c9a2; /* Match hero button color */
+  margin-bottom: 15px;
+}
+
+.missionStatement p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Info Cards */
+.infoCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white; /* White card background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.33% - 20px); /* Three cards per row */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.iconWrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00c9a2; /* Accent color for icons */
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.iconWrapper img {
+  width: 60%;
+  height: auto;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .overlay {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .heroTitle {
+    top: 0;
+  }
+
+  .tagline {
+    font-size: 3rem;
+  }
+
+  .rightImageWrapper {
+    left: 50%;
+    bottom: 10px;
+    width: 300px;
+  }
+
+  .infoCards {
+    gap: 15px;
+  }
+
+  .card {
+    width: calc(50% - 15px); /* Two cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaButton {
+    width: 90%;
+    margin-top: 40px;
+  }
+
+  .features h1,
+  .features h2 {
+    font-size: 2rem;
+  }
+
+  .infoCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: auto;
+  }
+
+  .overlay {
+    padding: 20px;
+  }
+
+  .ctaButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .features h1,
+  .features h2 {
+    font-size: 1.6rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Footer */
+.footer {
+  background: #fce4b6;
+  color: rgb(0, 0, 0);
+  padding: 40px 20px; /* Increased padding for a larger footer */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-contact,
+.footer-social {
+  text-align: left;
+}
+
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-contact p,
+.footer-social p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.footer-contact p a,
+.footer-social p a {
+  text-decoration: none; /* Remove underline for links */
+  color: black; /* Make link text black */
+}

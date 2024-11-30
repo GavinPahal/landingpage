@@ -28,7 +28,9 @@ export default function Hero() {
           </p>
           <p className="subTagline">
             <span className="demoText">Get a demo and try our new app.</span>
-            <span className="natureText">The Right Bite, Every Time</span>
+            <span className="natureText">
+            The Right Bite, Every Time
+            </span>
           </p>
           <a href="#demo" className="ctaButton">
             TRY DEMO
@@ -36,14 +38,15 @@ export default function Hero() {
         </div>
       </div>
 
+      
       <div className="rightImageWrapper">
         <div className="rightImageContainer">
           <Image
             src="/images/phone.png"
             alt="New Image"
             layout="intrinsic"
-            width={500}
-            height={500}
+            width={500} 
+            height={500} 
           />
         </div>
       </div>

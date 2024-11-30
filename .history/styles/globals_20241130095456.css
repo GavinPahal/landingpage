@@ -11,155 +11,6 @@ body {
   overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-/* Hero Section */
-.hero {
-  display: flex;
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-color: #2d2d2d;
-}
-
-.imageWrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.imageContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  filter: blur(8px);
-  object-fit: cover;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 60px 40px;
-  text-align: left;
-  z-index: 1;
-}
-
-.heroTitle {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.heroTitle img {
-  margin-right: 20px;
-  margin-top: 20px;
-}
-
-.heroTitle h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-/* Tagline Styles */
-.tagline {
-  font-size: 5rem;
-  font-weight: bold;
-  margin-bottom: 0;
-  color: #ffffff;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
-  line-height: 1.1;
-  letter-spacing: 1.5px;
-  display: block;
-  max-width: 100%;
-}
-
-.bestNature,
-.appEver {
-  display: block;
-  font-size: 3rem;
-}
-
-/* Subhead Lines */
-.subTagline {
-  font-size: 1.3rem;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  line-height: 1.6;
-  max-width: 600px;
-  color: white;
-  text-align: center;
-}
-
-/* Individual Subhead Classes */
-.demoText {
-  font-size: 1.4rem;
-  color: #ffffff;
-  font-weight: 600;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.natureText {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-top: 10px;
-  font-weight: 400;
-  display: block;
-  letter-spacing: 0.5px;
-  font-style: italic;
-  margin-left: 0px;
-}
-
-/* CTA Button */
-.ctaButton {
-  background-color: #00C9A2;
-  color: #ffffff;
-  padding: 15px 40px;
-  font-size: 1.4rem;
-  border: none;
-  border-radius: 50px;
-  margin-top: 60px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-}
-
-.ctaButton:hover {
-  background-color: #035343;
-  transform: scale(1.05);
-}
-
-.ctaButton:focus {
-  outline: none;
-}
-
-.rightImageWrapper {
-  position: absolute;
-  left: 62%;
-  bottom: 0;
-  width: 400px;
-  z-index: 2;
-  margin-top: 100px;
-}
-
-.rightImageContainer img {
-  width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
 /* Mission Statement Section */
 .missionStatement {
   padding: 40px 20px;
@@ -184,6 +35,131 @@ body {
   color: #000000;
   max-width: 800px;
   margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  background-color: #2d2d2d;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(8px);
+  object-fit: cover;
+  z-index: 0; /* Ensure the background blur is below everything else */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 30px;
+  text-align: left;
+  z-index: 1; /* Keep the overlay above the blurred image */
+}
+
+.heroTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.heroTitle img {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.heroTitle h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.phoneImage {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  z-index: 2; /* Ensure the phone is above both the overlay and the blurred background */
+  max-width: 250px;
+  border: none;
+  box-shadow: none;
+}
+
+/* Tagline Styles */
+.tagline {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+  display: block;
+}
+
+.bestNature,
+.appEver {
+  display: block;
+  font-size: 2.8rem;
+}
+
+/* Subhead Lines */
+.subTagline {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 600px;
+  color: white;
+  text-align: center;
+}
+
+/* CTA Button */
+.ctaButton {
+  background-color: #00C9A2;
+  color: #ffffff;
+  padding: 12px 30px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, rotate 0.3s;
+  text-decoration: none;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.ctaButton:hover {
+  background-color: #035343;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.ctaButton:focus {
+  outline: none;
 }
 
 /* Features Section */
@@ -323,69 +299,41 @@ body {
   max-width: 220px;
 }
 
-/* Responsive Design for iPhone 14 Pro Max */
-@media (max-width: 430px) {
-  .hero {
+/* Responsive Design */
+@media (max-width: 768px) {
+  .valueCard {
     flex-direction: column;
-    height: auto;
-  }
-
-  .heroTitle h1 {
-    font-size: 1.5rem;
     text-align: center;
   }
 
+  .ctaButton {
+    padding: 10px 25px;
+  }
+
+  .phoneImage {
+    max-width: 200px; /* Smaller image for smaller screens */
+    top: 40%;
+    right: 5%; /* Adjust position */
+  }
+}
+
+@media (max-width: 430px) {
   .tagline {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .ctaButton {
-    font-size: 1.1rem;
-    padding: 12px 30px;
-    margin-top: 40px;
-  }
-
-  .rightImageWrapper {
-    width: 80%;
-    position: relative;
-    margin-top: 20px;
-  }
-
-  .rightImageContainer img {
-    width: 100%;
-    height: auto;
-  }
-
-  .missionStatement {
-    padding: 30px 15px;
-    max-width: 100%;
-  }
-
-  .missionStatement p {
-    font-size: 1rem;
-  }
-
-  .features h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
   .infoCards {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
 
-  .card img {
-    width: 70px;
-    height: 70px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-contact,
-  .footer-social {
-    text-align: center;
+  .phoneImage {
+    max-width: 180px; /* Even smaller image for phones */
+    top: 30%; /* Adjust position */
+    right: 2%; /* Adjust position */
   }
 }

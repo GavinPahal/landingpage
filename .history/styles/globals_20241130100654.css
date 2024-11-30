@@ -323,50 +323,53 @@ body {
   max-width: 220px;
 }
 
-/* Responsive Design for iPhone 14 Pro Max */
-@media (max-width: 430px) {
+/* Responsive Design */
+@media (max-width: 1024px) {
   .hero {
     flex-direction: column;
-    height: auto;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 60%; /* Adjust for smaller screens */
+  }
+
+  .overlay {
+    padding: 40px 30px;
   }
 
   .heroTitle h1 {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.8rem;
   }
 
   .tagline {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
+  }
+
+  .subTagline {
+    font-size: 1.2rem;
   }
 
   .ctaButton {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 12px 30px;
-    margin-top: 40px;
   }
 
   .rightImageWrapper {
-    width: 80%;
-    position: relative;
-    margin-top: 20px;
-  }
-
-  .rightImageContainer img {
-    width: 100%;
-    height: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 70%;
+    margin-top: 0;
+    transform: translateX(-50%);
   }
 
   .missionStatement {
     padding: 30px 15px;
-    max-width: 100%;
-  }
-
-  .missionStatement p {
-    font-size: 1rem;
   }
 
   .features h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .infoCards {
@@ -375,8 +378,20 @@ body {
   }
 
   .card img {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .coreValues {
+    padding: 20px;
+  }
+
+  .valueCard {
+    flex-direction: column;
+  }
+
+  .textContent h3 {
+    font-size: 1.6rem;
   }
 
   .footer-content {
@@ -387,5 +402,127 @@ body {
   .footer-contact,
   .footer-social {
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .imageWrapper {
+    height: 40vh;
+  }
+
+  .overlay {
+    padding: 30px 20px;
+  }
+
+  .heroTitle h1 {
+    font-size: 1.6rem;
+  }
+
+  .tagline {
+    font-size: 3.5rem;
+  }
+
+  .ctaButton {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  .rightImageWrapper {
+    width: 80%;
+    margin-top: 20px;
+    transform: translateX(0);
+  }
+
+  .missionStatement {
+    padding: 20px 10px;
+  }
+
+  .features h2 {
+    font-size: 2rem;
+  }
+
+  .infoCards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .coreValues {
+    padding: 15px;
+  }
+
+  .valueCard {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: auto;
+  }
+
+  .heroTitle h1 {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 3rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  .rightImageWrapper {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .missionStatement {
+    padding: 15px 10px;
+  }
+
+  .features h2 {
+    font-size: 1.8rem;
+  }
+
+  .infoCards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .coreValues {
+    padding: 10px;
+  }
+
+  .valueCard {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
   }
 }

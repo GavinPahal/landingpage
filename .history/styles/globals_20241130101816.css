@@ -323,8 +323,89 @@ body {
   max-width: 220px;
 }
 
-/* Responsive Design for iPhone 14 Pro Max */
-@media (max-width: 430px) {
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 60%; /* Adjust for smaller screens */
+  }
+
+  .overlay {
+    padding: 40px 30px;
+  }
+
+  .heroTitle h1 {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 4.5rem;
+  }
+
+  .subTagline {
+    font-size: 1.2rem;
+  }
+
+  .ctaButton {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+  }
+
+  .rightImageWrapper {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 70%;
+    margin-top: 0;
+    transform: translateX(-50%);
+  }
+
+  .missionStatement {
+    padding: 30px 15px;
+  }
+
+  .features h2 {
+    font-size: 2.2rem;
+  }
+
+  .infoCards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .coreValues {
+    padding: 20px;
+  }
+
+  .valueCard {
+    flex-direction: column;
+  }
+
+  .textContent h3 {
+    font-size: 1.6rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contact,
+  .footer-social {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
   .hero {
     flex-direction: column;
     height: auto;
@@ -332,33 +413,22 @@ body {
 
   .heroTitle h1 {
     font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .tagline {
-    font-size: 3.5rem;
   }
 
   .ctaButton {
     font-size: 1.1rem;
-    padding: 12px 30px;
-    margin-top: 40px;
+    padding: 10px 20px;
   }
 
   .rightImageWrapper {
     width: 80%;
-    position: relative;
+    transform: translateX(0);
     margin-top: 20px;
   }
 
   .rightImageContainer img {
     width: 100%;
     height: auto;
-  }
-
-  .missionStatement {
-    padding: 30px 15px;
-    max-width: 100%;
   }
 
   .missionStatement p {
@@ -374,18 +444,38 @@ body {
     gap: 20px;
   }
 
-  .card img {
-    width: 70px;
-    height: 70px;
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .heroTitle h1 {
+    font-size: 1.3rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  .rightImageWrapper {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .missionStatement p {
+    font-size: 1rem;
   }
 
   .footer-content {
     flex-direction: column;
     align-items: center;
-  }
-
-  .footer-contact,
-  .footer-social {
-    text-align: center;
   }
 }
