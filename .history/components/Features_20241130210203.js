@@ -17,10 +17,10 @@ export default function Features() {
         <div className="card">
           <div className="iconWrapper">
             <Image
-              src="/images/iconamoon_scanner (2).svg"
+              src="/images/iconamoon_scanner (1).jpg"
               alt="Feature 1"
-              width={130}
-              height={130}
+              width={118}
+              height={118}
             />
           </div>
           <h3>Scan the Product</h3>
@@ -32,10 +32,10 @@ export default function Features() {
         <div className="card">
           <div className="iconWrapper">
             <Image
-              src="/images/magnifying (1).svg"
+              src="/images/magnifying.jpg"
               alt="Feature 2"
-              width={130}
-              height={130}
+              width={118}
+              height={118}
             />
           </div>
           <h3>Get the Results</h3>
@@ -47,10 +47,10 @@ export default function Features() {
         <div className="card">
           <div className="iconWrapper">
             <Image
-              src="/images/Confident (1).svg"
+              src="/images/Confident.jpg"
               alt="Feature 3"
-              width={130}
-              height={130}
+              width={115}
+              height={115}
             />
           </div>
           <h3>Enjoy With Confidence</h3>

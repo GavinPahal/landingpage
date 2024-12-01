@@ -32,7 +32,7 @@ export default function Features() {
         <div className="card">
           <div className="iconWrapper">
             <Image
-              src="/images/magnifying (1).svg"
+              src="/images/magnifying.jpg"
               alt="Feature 2"
               width={130}
               height={130}
@@ -47,7 +47,7 @@ export default function Features() {
         <div className="card">
           <div className="iconWrapper">
             <Image
-              src="/images/Confident (1).svg"
+              src="/images/Confident.jpg"
               alt="Feature 3"
               width={130}
               height={130}

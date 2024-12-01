@@ -10,10 +10,10 @@ export default function Features() {
       >
         <div className="card" style={{ margin: "0 10px" }}>
           <Image
-            src="/images/ai-language-model.png"
+            src="/images/chatbot.jpg"
             alt="Feature 1"
-            width={120}
-            height={120}
+            width={100}
+            height={100}
           />
           <h3>AI Chatbot</h3>
           <p>
@@ -28,7 +28,7 @@ export default function Features() {
 
         <div className="card" style={{ margin: "0 10px" }}>
           <Image
-            src="/images/trash (1).png"
+            src="/images/trash.jpg"
             alt="Feature 2"
             width={125}
             height={125}
@@ -46,10 +46,10 @@ export default function Features() {
 
         <div className="card" style={{ margin: "0 10px" }}>
           <Image
-            src="/images/contacts.png"
+            src="/images/profile 1.jpg"
             alt="Feature 3"
-            width={125}
-            height={125}
+            width={100}
+            height={100}
           />
           <h3>Multiple User Profiles</h3>
           <p>

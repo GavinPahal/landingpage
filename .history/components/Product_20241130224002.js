@@ -28,7 +28,7 @@ export default function Features() {
 
         <div className="card" style={{ margin: "0 10px" }}>
           <Image
-            src="/images/trash (1).png"
+            src="/images/trash.jpg"
             alt="Feature 2"
             width={125}
             height={125}
@@ -46,7 +46,7 @@ export default function Features() {
 
         <div className="card" style={{ margin: "0 10px" }}>
           <Image
-            src="/images/contacts.png"
+            src="/images/profile 1.jpg"
             alt="Feature 3"
             width={125}
             height={125}
