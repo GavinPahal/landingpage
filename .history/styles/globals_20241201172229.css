@@ -285,7 +285,7 @@ body {
   flex-direction: column;
   gap: 40px; /* Adjusted gap between value cards */
   padding: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 400px;
 }
 
 .valueCard {
@@ -293,7 +293,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 500px;
+  gap: 20px;
   margin-bottom: 60px; /* Adjusted margin-bottom */
 }
 

@@ -23,6 +23,8 @@ export default function Features() {
           </p>
         </div>
 
+        {/* Arrow */}
+        <div className="arrow"></div>
 
         <div className="card" style={{ margin: "0 10px" }}>
           <Image

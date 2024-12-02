@@ -293,13 +293,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 500px;
+  gap: 20px;
   margin-bottom: 60px; /* Adjusted margin-bottom */
-}
-
-.value{
-  text-align: center;
-  font-size: 25px;
 }
 
 .textContent {
