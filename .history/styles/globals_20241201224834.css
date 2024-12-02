@@ -298,8 +298,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 400px; /* Reduced gap */
-  margin-bottom: 60px;
+  gap: 500px; /* Reduced gap */
+  margin-bottom: 500px;
 }
 
 .value {
@@ -310,7 +310,6 @@ body {
 .textContent {
   flex: 1;
   padding: 10px;
-  margin-bottom: 100px;
 }
 
 .textContent h3 {
@@ -326,7 +325,6 @@ body {
 
 .imageContent img {
   max-width: 220px;
-  margin-bottom: 100px;
 }
 
 /* Responsive Design */
@@ -397,7 +395,7 @@ body {
   }
 
   .valueCard {
-    gap: 55px; /* Further reduced gap */
+    gap: 20px; /* Further reduced gap */
   }
 
   .value {

@@ -1,0 +1,233 @@
+/* Hero Section Adjustments */
+.hero {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #2d2d2d;
+  flex-direction: column; /* Adjust layout to column for small screens */
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 60%; /* Adjust the height for responsiveness */
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(8px);
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 40px;
+  text-align: left;
+  z-index: 1;
+}
+
+.heroTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-direction: column; /* Stack the hero title for small screens */
+  text-align: center;
+}
+
+.heroTitle img {
+  margin-right: 0;
+  margin-top: 20px;
+}
+
+.heroTitle h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+  display: block;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Adjustments for responsiveness at different breakpoints */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .imageWrapper {
+    height: 60%;
+  }
+
+  .overlay {
+    padding: 40px 30px;
+  }
+
+  .heroTitle h1 {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 4.5rem;
+  }
+
+  .ctaButton {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+  }
+
+  .rightImageWrapper {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 70%;
+    margin-top: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .tagline {
+    font-size: 3.5rem;
+  }
+
+  .ctaButton {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+  }
+
+  .rightImageWrapper {
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+    margin-top: 0;
+  }
+
+  .missionStatement {
+    padding: 15px;
+  }
+
+  .features h2 {
+    font-size: 2rem;
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .overlay {
+    padding: 20px;
+  }
+
+  .tagline {
+    font-size: 3rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  .rightImageWrapper {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 80%;
+    margin-top: 0;
+    transform: translateX(-50%);
+  }
+
+  .missionStatement h1 {
+    font-size: 1.5rem;
+  }
+
+  .missionStatement p {
+    font-size: 0.9rem;
+  }
+
+  .coreValues {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .valueCard {
+    gap: 20px;
+  }
+
+  .value {
+    font-size: 20px;
+  }
+
+  .card img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero {
+    height: 60vh; /* Adjusted for very small screens */
+  }
+
+  .coreValues {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .valueCard {
+    gap: 15px;
+  }
+
+  .value {
+    font-size: 18px;
+  }
+
+  .textContent h3 {
+    font-size: 1.6rem;
+  }
+
+  .textContent p {
+    font-size: 1rem;
+  }
+
+  .imageContent img {
+    max-width: 180px;
+  }
+}

@@ -18,12 +18,13 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #2d2d2d;
+  flex-direction: column; /* Adjust layout to column for small screens */
 }
 
 .imageWrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 60%; /* Adjust the height for responsiveness */
 }
 
 .imageContainer {
@@ -57,10 +58,12 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+  flex-direction: column; /* Stack the hero title for small screens */
+  text-align: center;
 }
 
 .heroTitle img {
-  margin-right: 20px;
+  margin-right: 0;
   margin-top: 20px;
 }
 
@@ -69,9 +72,9 @@ body {
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-/* Tagline Styles */
 .tagline {
   font-size: 5rem;
   font-weight: bold;
@@ -82,82 +85,164 @@ body {
   letter-spacing: 1.5px;
   display: block;
   max-width: 100%;
-}
-
-.bestNature,
-.appEver {
-  display: block;
-  font-size: 3rem;
-}
-
-/* Subhead Lines */
-.subTagline {
-  font-size: 1.3rem;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  line-height: 1.6;
-  max-width: 600px;
-  color: white;
   text-align: center;
 }
 
-/* Individual Subhead Classes */
-.demoText {
-  font-size: 1.4rem;
-  color: #ffffff;
-  font-weight: 600;
-  margin-bottom: 10px;
-  display: block;
+/* Adjustments for responsiveness at different breakpoints */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .imageWrapper {
+    height: 60%;
+  }
+
+  .overlay {
+    padding: 40px 30px;
+  }
+
+  .heroTitle h1 {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 4.5rem;
+  }
+
+  .ctaButton {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+  }
+
+  .rightImageWrapper {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 70%;
+    margin-top: 0;
+    transform: translateX(-50%);
+  }
 }
 
-.natureText {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-top: 10px;
-  font-weight: 400;
-  display: block;
-  letter-spacing: 0.5px;
-  font-style: italic;
-  margin-left: 0px;
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .tagline {
+    font-size: 3.5rem;
+  }
+
+  .ctaButton {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+  }
+
+  .rightImageWrapper {
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+    margin-top: 0;
+  }
+
+  .missionStatement {
+    padding: 15px;
+  }
+
+  .features h2 {
+    font-size: 2rem;
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
-/* CTA Button */
-.ctaButton {
-  background-color: #00C9A2;
-  color: #ffffff;
-  padding: 15px 40px;
-  font-size: 1.4rem;
-  border: none;
-  border-radius: 50px;
-  margin-top: 60px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+@media (max-width: 480px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .overlay {
+    padding: 20px;
+  }
+
+  .tagline {
+    font-size: 3rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  .rightImageWrapper {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 80%;
+    margin-top: 0;
+    transform: translateX(-50%);
+  }
+
+  .missionStatement h1 {
+    font-size: 1.5rem;
+  }
+
+  .missionStatement p {
+    font-size: 0.9rem;
+  }
+
+  .coreValues {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .valueCard {
+    gap: 20px;
+  }
+
+  .value {
+    font-size: 20px;
+  }
+
+  .card img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
-.ctaButton:hover {
-  background-color: #035343;
-  transform: scale(1.05);
-}
+@media (max-width: 430px) {
+  .hero {
+    height: 60vh; /* Adjusted for very small screens */
+  }
 
-.ctaButton:focus {
-  outline: none;
-}
+  .coreValues {
+    gap: 15px;
+    padding: 15px;
+  }
 
-.rightImageWrapper {
-  position: absolute;
-  left: 62%;
-  bottom: 0;
-  width: 400px;
-  z-index: 2;
-  margin-top: 100px;
-}
+  .valueCard {
+    gap: 15px;
+  }
 
-.rightImageContainer img {
-  width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
+  .value {
+    font-size: 18px;
+  }
+
+  .textContent h3 {
+    font-size: 1.6rem;
+  }
+
+  .textContent p {
+    font-size: 1rem;
+  }
+
+  .imageContent img {
+    max-width: 180px;
+  }
 }
 
 /* Mission Statement Section */
@@ -327,208 +412,4 @@ body {
 .imageContent img {
   max-width: 220px;
   margin-bottom: 100px;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .hero {
-    flex-direction: column;
-  }
-
-  .imageWrapper {
-    width: 100%;
-    height: 60%;
-  }
-
-  .overlay {
-    padding: 40px 30px;
-  }
-
-  .heroTitle h1 {
-    font-size: 1.8rem;
-  }
-
-  .tagline {
-    font-size: 4.5rem;
-  }
-
-  .subTagline {
-    font-size: 1.2rem;
-  }
-
-  .ctaButton {
-    font-size: 1.2rem;
-    padding: 12px 30px;
-  }
-
-  .rightImageWrapper {
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    width: 70%;
-    margin-top: 0;
-    transform: translateX(-50%);
-  }
-
-  .missionStatement h1 {
-    font-size: 1.8rem;
-  }
-
-  .missionStatement p {
-    font-size: 0.95rem;
-  }
-
-  .features h2 {
-    font-size: 2.2rem;
-  }
-
-  .infoCards {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .card img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .coreValues {
-    gap: 10px; /* Further reduced gap */
-  }
-
-  .valueCard {
-    gap: 55px; /* Further reduced gap */
-  }
-
-  .value {
-    font-size: 22px;
-  }
-
-  .textContent h3 {
-    font-size: 1.5rem;
-  }
-
-  .textContent p {
-    font-size: 1rem;
-  }
-
-  .imageContent img {
-    max-width: 180px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    height: 80vh;
-  }
-
-  .tagline {
-    font-size: 3.5rem;
-  }
-
-  .ctaButton {
-    font-size: 1.1rem;
-    padding: 10px 25px;
-  }
-
-  .rightImageWrapper {
-    position: absolute;
-    bottom: 10%;
-    width: 80%;
-    margin-top: 0;
-  }
-
-  .missionStatement {
-    padding: 15px;
-  }
-
-  .features h2 {
-    font-size: 2rem;
-  }
-
-  .card img {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    height: 70vh;
-  }
-
-  .overlay {
-    padding: 20px;
-  }
-
-  .tagline {
-    font-size: 3rem;
-  }
-
-  .ctaButton {
-    font-size: 1rem;
-    padding: 8px 20px;
-  }
-
-  .rightImageWrapper {
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    width: 80%;
-    margin-top: 0;
-    transform: translateX(-50%);
-  }
-
-  .missionStatement h1 {
-    font-size: 1.5rem;
-  }
-
-  .missionStatement p {
-    font-size: 0.9rem;
-  }
-
-  .coreValues {
-    gap: 20px; /* Reduced gap for small screens */
-    padding: 10px;
-  }
-
-  .valueCard {
-    gap: 20px; /* Reduced gap for small screens */
-  }
-
-  .value {
-    font-size: 20px;
-  }
-
-  .card img {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-@media (max-width: 430px) {
-  .coreValues {
-    gap: 15px; /* Further reduced gap for very small screens */
-    padding: 15px;
-  }
-
-  .valueCard {
-    gap: 15px; /* Further reduced gap */
-  }
-
-  .value {
-    font-size: 18px;
-  }
-
-  .textContent h3 {
-    font-size: 1.6rem;
-  }
-
-  .textContent p {
-    font-size: 1rem;
-  }
-
-  .imageContent img {
-    max-width: 180px;
-  }
 }

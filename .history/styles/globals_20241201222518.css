@@ -1,0 +1,302 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #2d2d2d;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(8px);
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 40px;
+  text-align: left;
+  z-index: 1;
+}
+
+.heroTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.heroTitle img {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.heroTitle h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Tagline Styles */
+.tagline {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+  display: block;
+  max-width: 100%;
+}
+
+.bestNature,
+.appEver {
+  display: block;
+  font-size: 3rem;
+}
+
+/* Subhead Lines */
+.subTagline {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 600px;
+  color: white;
+  text-align: center;
+}
+
+/* Individual Subhead Classes */
+.demoText {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.natureText {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 10px;
+  font-weight: 400;
+  display: block;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  margin-left: 0px;
+}
+
+/* CTA Button */
+.ctaButton {
+  background-color: #00C9A2;
+  color: #ffffff;
+  padding: 15px 40px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 50px;
+  margin-top: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.ctaButton:hover {
+  background-color: #035343;
+  transform: scale(1.05);
+}
+
+.ctaButton:focus {
+  outline: none;
+}
+
+.rightImageWrapper {
+  position: absolute;
+  left: 62%;
+  bottom: 0;
+  width: 400px;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.rightImageContainer img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Mission Statement Section */
+.missionStatement {
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto; /* Center the mission statement on the page */
+  padding: 20px;
+}
+
+.missionStatement h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0 auto; /* Center the heading */
+  text-align: center;
+}
+
+.missionStatement p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  max-width: 600px;
+  margin: 20px auto; /* Center the paragraph text */
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 50vh; /* Reduce height for smaller screens */
+  }
+
+  .overlay {
+    padding: 30px 20px; /* Adjust padding */
+    align-items: center; /* Center overlay content */
+    text-align: center; /* Center text alignment */
+  }
+
+  .heroTitle {
+    flex-direction: column; /* Stack title and logo vertically */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .heroTitle img {
+    margin: 0 0 10px 0; /* Adjust logo margin */
+  }
+
+  .heroTitle h1 {
+    font-size: 1.5rem; /* Adjust title font size */
+  }
+
+  .tagline {
+    font-size: 3.5rem; /* Reduce tagline font size */
+    line-height: 1.2;
+  }
+
+  .subTagline {
+    font-size: 1rem; /* Adjust font size for subtext */
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .ctaButton {
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    margin-top: 20px;
+  }
+
+  .rightImageWrapper {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Make the image take full width */
+    margin-top: 20px;
+  }
+
+  .rightImageContainer img {
+    width: 100%; /* Ensure the image fits within the container */
+    border-radius: 0; /* Remove border radius for a cleaner look */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto; /* Ensure the section adapts to content */
+  }
+
+  .imageWrapper {
+    height: 40vh; /* Further reduce the image height */
+  }
+
+  .tagline {
+    font-size: 2.8rem; /* Reduce tagline font size */
+  }
+
+  .subTagline {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay {
+    padding: 20px 15px; /* Reduce padding */
+  }
+
+  .heroTitle h1 {
+    font-size: 1.2rem; /* Smaller title font size */
+  }
+
+  .tagline {
+    font-size: 2.2rem; /* Further reduce tagline font size */
+  }
+
+  .subTagline {
+    font-size: 0.8rem; /* Adjust subtext font size */
+  }
+
+  .ctaButton {
+    font-size: 0.9rem;
+    padding: 6px 18px;
+  }
+
+  .rightImageWrapper {
+    margin-top: 10px; /* Add some space above the image */
+  }
+}

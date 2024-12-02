@@ -397,7 +397,7 @@ body {
   }
 
   .valueCard {
-    gap: 55px; /* Further reduced gap */
+    gap: 100px; /* Further reduced gap */
   }
 
   .value {
