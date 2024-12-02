@@ -1,10 +1,11 @@
 import Image from "next/image";
+import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section className="hero">
-      <div className="imageWrapper">
-        <div className="imageContainer">
+    <section className={styles.hero} >
+      <div  className={styles.imageWrapper}>
+        <div className={styles.imageContainer}>
           <Image
             src="/images/grocey.jpg"
             alt="Nature Image"
@@ -12,8 +13,8 @@ export default function Hero() {
             objectFit="cover"
           />
         </div>
-        <div className="overlay">
-          <div className="heroTitle">
+        <div className={styles.overlay}>
+          <div className={styles.heroTitle}> 
             <Image
               src="/images/logo.webp"
               alt="Goldibite Logo"
@@ -22,22 +23,22 @@ export default function Hero() {
             />
             <h1>Goldibite</h1>
           </div>
-          <p className="tagline">
+          <p className={styles.tagline}> 
             <span className="bestNature">YOUR BUDDY FOR</span>
             <span className="appEver">FOOD SAFETY</span>
           </p>
-          <p className="subTagline">
+          <p className={styles.subTagline}>  
             <span className="demoText">Get a demo and try our new app.</span>
             <span className="natureText">The Right Bite, Every Time</span>
           </p>
-          <a href="#demo" className="ctaButton">
+          <a href="#demo" className={styles.ctaButton}> 
             TRY DEMO
           </a>
         </div>
       </div>
 
-      <div className="rightImageWrapper">
-        <div className="rightImageContainer">
+      <div className={styles.rightImageWrapper}>  
+        <div className={styles.rightImageContainer}> 
           <Image
             src="/images/phone.png"
             alt="New Image"
