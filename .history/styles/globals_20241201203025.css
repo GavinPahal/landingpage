@@ -162,7 +162,7 @@ body {
 
 /* Mission Statement Section */
 .missionStatement {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
   border-radius: 10px;
   max-width: 900px;
@@ -180,7 +180,7 @@ body {
 .missionStatement p {
   font-size: 0.9rem;
   line-height: 1.8;
-  color: #ffffff;
+  color: #000000;
   max-width: 600px;
   margin: 0 auto;
   margin-left: 20rem;
@@ -192,13 +192,13 @@ body {
 .features {
   padding: 30px 20px;
   text-align: center;
-  background-color: #0e0e0e;
+  background-color: #00C9A2;
 }
 
 .features h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -221,7 +221,7 @@ body {
 .card h3 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -229,7 +229,7 @@ body {
 .card p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #ffffff;
+  color: #000000;
   max-width: 300px;
   margin: 0 auto;
   text-align: left;

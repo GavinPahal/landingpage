@@ -10,7 +10,7 @@ export default function Features() {
       >
         <div className="card" style={{ margin: "0 10px" }}>
           <Image
-            src="/images/ai-language-model (3).png"
+            src="/images/ai-language-model (2).png"
             alt="Feature 1"
             width={120}
             height={120}

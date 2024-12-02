@@ -162,7 +162,7 @@ body {
 
 /* Mission Statement Section */
 .missionStatement {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
   border-radius: 10px;
   max-width: 900px;
@@ -180,7 +180,7 @@ body {
 .missionStatement p {
   font-size: 0.9rem;
   line-height: 1.8;
-  color: #ffffff;
+  color: #000000;
   max-width: 600px;
   margin: 0 auto;
   margin-left: 20rem;
@@ -192,13 +192,13 @@ body {
 .features {
   padding: 30px 20px;
   text-align: center;
-  background-color: #0e0e0e;
+  background-color: #00C9A2;
 }
 
 .features h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -217,11 +217,10 @@ body {
   padding: 20px;
 }
 
-
 .card h3 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -229,7 +228,7 @@ body {
 .card p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #ffffff;
+  color: #000000;
   max-width: 300px;
   margin: 0 auto;
   text-align: left;
@@ -283,28 +282,21 @@ body {
 .coreValues {
   display: flex;
   flex-direction: column;
-  gap: 40px; /* Adjusted gap between value cards */
+  gap: 40px; /* Separation between cards */
   padding: 20px;
   margin-bottom: 80px;
 }
 
 .valueCard {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column; /* Ensures cards stack */
+  justify-content: center;
   align-items: center;
-  gap: 500px;
-  margin-bottom: 60px; /* Adjusted margin-bottom */
-}
-
-.value{
-  text-align: center;
-  font-size: 25px;
-}
-
-.textContent {
-  flex: 1;
-  padding: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  background: #f5f5f5;
+  margin: 20px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .textContent h3 {
@@ -320,6 +312,7 @@ body {
 
 .imageContent img {
   max-width: 220px;
+  margin-bottom: 20px;
 }
 
 /* Responsive Design */
@@ -330,7 +323,7 @@ body {
 
   .imageWrapper {
     width: 100%;
-    height: 60%; /* Adjust for smaller screens */
+    height: 60%;
   }
 
   .overlay {
@@ -400,54 +393,6 @@ body {
 
 @media (max-width: 430px) {
   .heroTitle h1 {
-    font-size: 1.4rem;
-  }
-
-  .tagline {
-    font-size: 3rem;
-  }
-
-  .ctaButton {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-
-  .rightImageWrapper {
-    width: 80%;
-  }
-
-  .missionStatement {
-    padding: 20px;
-  }
-
-  .features h2 {
     font-size: 1.8rem;
-  }
-
-  .infoCards {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .card img {
-    width: 70px;
-    height: 70px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .coreValues .valueCard {
-    flex-direction: column;
-  }
-
-  .textContent h3 {
-    font-size: 1.4rem;
-  }
-
-  .textContent p {
-    font-size: 1rem;
   }
 }

@@ -32,7 +32,7 @@ export default function Features() {
         <div className="card">
           <div className="iconWrapper">
             <Image
-              src="/images/White stroke chips.svg"
+              src="/images/White safety stroke.svg"
               alt="Feature 2"
               width={130}
               height={130}

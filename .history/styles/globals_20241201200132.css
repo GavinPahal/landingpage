@@ -162,7 +162,7 @@ body {
 
 /* Mission Statement Section */
 .missionStatement {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
   border-radius: 10px;
   max-width: 900px;
@@ -180,7 +180,7 @@ body {
 .missionStatement p {
   font-size: 0.9rem;
   line-height: 1.8;
-  color: #ffffff;
+  color: #000000;
   max-width: 600px;
   margin: 0 auto;
   margin-left: 20rem;
@@ -192,13 +192,13 @@ body {
 .features {
   padding: 30px 20px;
   text-align: center;
-  background-color: #0e0e0e;
+  background-color: #00C9A2;
 }
 
 .features h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -217,11 +217,10 @@ body {
   padding: 20px;
 }
 
-
 .card h3 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -229,7 +228,7 @@ body {
 .card p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #ffffff;
+  color: #000000;
   max-width: 300px;
   margin: 0 auto;
   text-align: left;
@@ -283,7 +282,7 @@ body {
 .coreValues {
   display: flex;
   flex-direction: column;
-  gap: 40px; /* Adjusted gap between value cards */
+  gap: 80px; /* Increased gap for more spacing */
   padding: 20px;
   margin-bottom: 80px;
 }
@@ -293,11 +292,11 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 500px;
-  margin-bottom: 60px; /* Adjusted margin-bottom */
+  gap: 40px;
+  margin-bottom: 40px; /* Ensures proper separation */
 }
 
-.value{
+.value {
   text-align: center;
   font-size: 25px;
 }
@@ -330,7 +329,7 @@ body {
 
   .imageWrapper {
     width: 100%;
-    height: 60%; /* Adjust for smaller screens */
+    height: 60%;
   }
 
   .overlay {
@@ -404,50 +403,6 @@ body {
   }
 
   .tagline {
-    font-size: 3rem;
-  }
-
-  .ctaButton {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-
-  .rightImageWrapper {
-    width: 80%;
-  }
-
-  .missionStatement {
-    padding: 20px;
-  }
-
-  .features h2 {
-    font-size: 1.8rem;
-  }
-
-  .infoCards {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .card img {
-    width: 70px;
-    height: 70px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .coreValues .valueCard {
-    flex-direction: column;
-  }
-
-  .textContent h3 {
-    font-size: 1.4rem;
-  }
-
-  .textContent p {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }

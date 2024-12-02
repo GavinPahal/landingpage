@@ -10,7 +10,7 @@ export default function Features() {
       >
         <div className="card" style={{ margin: "0 10px" }}>
           <Image
-            src="/images/ai-language-model (3).png"
+            src="/images/ai-language-model (2).png"
             alt="Feature 1"
             width={120}
             height={120}
@@ -26,7 +26,7 @@ export default function Features() {
 
         <div className="card" style={{ margin: "0 10px" }}>
           <Image
-            src="/images/trash (4).png"
+            src="/images/trash (3).png"
             alt="Feature 2"
             width={125}
             height={125}
@@ -42,7 +42,7 @@ export default function Features() {
 
         <div className="card" style={{ margin: "0 10px" }}>
           <Image
-            src="/images/multiple-users (4).png"
+            src="/images/multiple-users (3).png"
             alt="Feature 3"
             width={125}
             height={125}

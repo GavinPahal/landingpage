@@ -71,7 +71,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Tagline Styles */
 .tagline {
   font-size: 5rem;
   font-weight: bold;
@@ -90,7 +89,6 @@ body {
   font-size: 3rem;
 }
 
-/* Subhead Lines */
 .subTagline {
   font-size: 1.3rem;
   margin-top: 20px;
@@ -101,27 +99,6 @@ body {
   text-align: center;
 }
 
-/* Individual Subhead Classes */
-.demoText {
-  font-size: 1.4rem;
-  color: #ffffff;
-  font-weight: 600;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.natureText {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-top: 10px;
-  font-weight: 400;
-  display: block;
-  letter-spacing: 0.5px;
-  font-style: italic;
-  margin-left: 0px;
-}
-
-/* CTA Button */
 .ctaButton {
   background-color: #00C9A2;
   color: #ffffff;
@@ -145,24 +122,9 @@ body {
   outline: none;
 }
 
-.rightImageWrapper {
-  position: absolute;
-  left: 62%;
-  bottom: 0;
-  width: 400px;
-  z-index: 2;
-  margin-top: 100px;
-}
-
-.rightImageContainer img {
-  width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
 /* Mission Statement Section */
 .missionStatement {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
   border-radius: 10px;
   max-width: 900px;
@@ -170,7 +132,6 @@ body {
 
 .missionStatement h1 {
   font-size: 2.2rem;
-  margin-left: 20rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -180,10 +141,9 @@ body {
 .missionStatement p {
   font-size: 0.9rem;
   line-height: 1.8;
-  color: #ffffff;
+  color: #000000;
   max-width: 600px;
   margin: 0 auto;
-  margin-left: 20rem;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -192,47 +152,91 @@ body {
 .features {
   padding: 30px 20px;
   text-align: center;
-  background-color: #0e0e0e;
+  background-color: #00C9A2;
 }
 
 .features h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
+/* Info Cards Section */
 .infoCards {
-  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 40px; /* Space between cards */
+  margin: 20px auto;
 }
 
 .card {
-  text-align: center;
-  margin: 0 auto;
+  flex: 1 1 calc(33.333% - 40px); /* Flexible width with space for gaps */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  text-align: center;
 }
 
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
 
 .card h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 8px;
-  text-align: center;
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .card p {
   font-size: 1rem;
+  color: #555;
   line-height: 1.6;
-  color: #ffffff;
-  max-width: 300px;
-  margin: 0 auto;
-  text-align: left;
+}
+
+/* Core Values Section */
+.coreValues {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px; /* Space between cards */
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.valueCard {
+  flex: 1 1 calc(33.333% - 40px); /* Flexible width with space for gaps */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.valueCard img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.valueCard h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.valueCard p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
 }
 
 /* Footer Section */
@@ -274,180 +278,28 @@ body {
   color: black;
 }
 
-.contact-icon,
-.social-icon {
-  margin-right: 10px;
-}
-
-/* Core Values Section */
-.coreValues {
-  display: flex;
-  flex-direction: column;
-  gap: 40px; /* Adjusted gap between value cards */
-  padding: 20px;
-  margin-bottom: 80px;
-}
-
-.valueCard {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 500px;
-  margin-bottom: 60px; /* Adjusted margin-bottom */
-}
-
-.value{
-  text-align: center;
-  font-size: 25px;
-}
-
-.textContent {
-  flex: 1;
-  padding: 10px;
-}
-
-.textContent h3 {
-  color: #00C9A2;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
-.textContent p {
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.imageContent img {
-  max-width: 220px;
-}
-
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .hero {
+  .infoCards, .coreValues {
     flex-direction: column;
+    gap: 20px; /* Reduced gap for smaller screens */
   }
 
-  .imageWrapper {
-    width: 100%;
-    height: 60%; /* Adjust for smaller screens */
-  }
-
-  .overlay {
-    padding: 40px 30px;
-  }
-
-  .heroTitle h1 {
-    font-size: 1.8rem;
-  }
-
-  .tagline {
-    font-size: 4.5rem;
-  }
-
-  .subTagline {
-    font-size: 1.2rem;
-  }
-
-  .ctaButton {
-    font-size: 1.2rem;
-    padding: 12px 30px;
-  }
-
-  .rightImageWrapper {
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    width: 70%;
-    margin-top: 0;
-    transform: translateX(-50%);
-  }
-
-  .missionStatement {
-    padding: 30px 15px;
-  }
-
-  .features h2 {
-    font-size: 2.2rem;
-  }
-
-  .infoCards {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .card img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .coreValues {
-    padding: 20px;
-  }
-
-  .valueCard {
-    flex-direction: column;
-  }
-
-  .textContent h3 {
-    font-size: 1.6rem;
-  }
-
-  .textContent p {
-    font-size: 1rem;
+  .card, .valueCard {
+    flex: 1 1 100%;
   }
 }
 
-@media (max-width: 430px) {
-  .heroTitle h1 {
-    font-size: 1.4rem;
+@media (max-width: 600px) {
+  .card, .valueCard {
+    padding: 15px;
   }
 
-  .tagline {
-    font-size: 3rem;
+  .card h3, .valueCard h3 {
+    font-size: 1.2rem;
   }
 
-  .ctaButton {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-
-  .rightImageWrapper {
-    width: 80%;
-  }
-
-  .missionStatement {
-    padding: 20px;
-  }
-
-  .features h2 {
-    font-size: 1.8rem;
-  }
-
-  .infoCards {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .card img {
-    width: 70px;
-    height: 70px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .coreValues .valueCard {
-    flex-direction: column;
-  }
-
-  .textContent h3 {
-    font-size: 1.4rem;
-  }
-
-  .textContent p {
-    font-size: 1rem;
+  .card p, .valueCard p {
+    font-size: 0.9rem;
   }
 }
